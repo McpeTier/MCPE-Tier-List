@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://itzsparow-mcpe.github.io/MCPE-Tier-List/sitemap.xml
