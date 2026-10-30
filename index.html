@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="47F7FjABoq9vHeEkjXsl5Hau7_UjuRTFS4Ofg4VYkK0">
+<title>MCPE 0.15.10 Tier List | Minecraft PE PvP</title>
+<meta name="description" content="MCPE 0.15.10 tier list and tier testing for Minecraft Pocket Edition PvP. Explore player ranks, the Top 10 leaderboard, and apply for a mobile PvP tier test.">
+<meta name="keywords" content="MCPE Tier List, MCPE 0.15.10 Tier List, MCPE tier testing, Minecraft PE 0.15.10 PvP, Minecraft Pocket Edition PvP, MCPE PvP rankings, MCPE player leaderboard, Minecraft PE tier test, MCPE Protocol 84">
+<meta name="author" content="RialZylos">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#0c0913">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MCPE 0.15.10 Tier List | Minecraft PE PvP">
+<meta property="og:description" content="Explore the MCPE 0.15.10 PvP tier list, Top 10 players, competitive ranks, and tier testing.">
+<meta property="og:site_name" content="MCPE Tier List">
+<meta property="og:url" content="https://mcpetier.github.io/MCPE-Tier-List/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:url" content="https://mcpetier.github.io/MCPE-Tier-List/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MCPE 0.15.10 Tier List | Minecraft PE PvP">
+<meta name="twitter:description" content="MCPE 0.15.10 PvP tier list, Top 10 players, competitive ranks, and tier testing.">
+<meta name="googlebot" content="index, follow">
+<style>
+:root{--bg:#090b0f;--panel:#11151b;--panel2:#171c24;--text:#f4f7fb;--muted:#929baa;--accent:#55d86a;--border:#28303b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#172019 0,#090b0f 42%);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+header{padding:42px 20px 30px;text-align:center;border-bottom:1px solid var(--border);background:rgba(5,7,10,.8)}
+.badge{display:inline-block;padding:7px 12px;border:1px solid #315838;border-radius:20px;color:#7bea8a;font-size:12px;font-weight:700;letter-spacing:1px}
+h1{font-size:clamp(30px,6vw,58px);margin:14px 0 8px;text-transform:uppercase;letter-spacing:2px}
+.subtitle{color:var(--muted);margin:0 auto;max-width:650px}
+nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
+nav button,.action{border:1px solid var(--border);background:var(--panel2);color:var(--text);padding:11px 16px;border-radius:9px;cursor:pointer;font-weight:700}
+nav button.active,.action.primary{background:var(--accent);color:#061007;border-color:var(--accent)}
+main{max-width:1100px;margin:30px auto;padding:0 18px}.topbar{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+input,select{background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:9px;padding:12px;outline:none}
+input{min-width:220px}.tier{margin:14px 0;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:rgba(17,21,27,.85)}
+.tier-head{display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--border)}
+.tier-label{width:55px;height:45px;display:grid;place-items:center;border-radius:8px;font-weight:900;font-size:20px;background:#6b1717}
+.tier[data-tier="S+"] .tier-label{background:#e6a11b;color:#171008}.tier[data-tier="S"] .tier-label{background:#e04444}
+.tier[data-tier="A"] .tier-label{background:#d85b9e}.tier[data-tier="B"] .tier-label{background:#7667d8}
+.tier[data-tier="C"] .tier-label{background:#438dcc}.tier[data-tier="D"] .tier-label{background:#68717c}
+.tier-info{flex:1}.tier-info b{display:block}.tier-info small{color:var(--muted)}
+.cards{min-height:105px;padding:14px;display:flex;gap:12px;flex-wrap:wrap}
+.card{width:125px;min-height:86px;padding:12px;border-radius:10px;background:#202732;border:1px solid #303a47;cursor:grab;display:flex;flex-direction:column;justify-content:space-between}
+.card:active{cursor:grabbing}.card .avatar{height:38px;width:38px;border-radius:7px;display:grid;place-items:center;background:#303b48;font-weight:900}.card small{color:#aab3c0}
+.empty{color:#68717c;padding:25px;text-align:center;width:100%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.stat{background:var(--panel);border:1px solid var(--border);padding:18px;border-radius:12px}.stat b{font-size:25px;display:block}.stat span{color:var(--muted);font-size:12px}
+.modal{position:fixed;inset:0;background:#0009;display:none;place-items:center;padding:20px}.modal.show{display:grid}.box{background:#11151b;border:1px solid var(--border);border-radius:15px;padding:22px;max-width:430px;width:100%}.box h2{margin-top:0}.form{display:grid;gap:10px}.form input,.form select,.form textarea{width:100%}.form textarea{min-height:90px;resize:vertical}.close{float:right;background:none;border:0;color:#fff;font-size:25px;cursor:pointer}
+footer{text-align:center;color:#68717c;padding:35px 15px;border-top:1px solid var(--border);margin-top:45px}
+@media(max-width:600px){.stats{grid-template-columns:1fr}.card{width:calc(50% - 6px)}.topbar input{width:100%}}
+
+.admin-table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.admin-table th,.admin-table td{padding:12px;text-align:left;border-bottom:1px solid var(--border);font-size:14px}
+.admin-table th{color:#7bea8a;background:#171c24}.admin-table td{color:#dce2ea}.admin-table tr:last-child td{border-bottom:0}
+.admin-card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;margin:10px 0}
+.admin-card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;color:#b9c1cd;font-size:14px}
+.admin-card-grid b{color:#fff}.danger{background:#641e1e!important;border-color:#8b3030!important;color:#fff!important}
+@media(max-width:700px){.admin-table{display:block;overflow-x:auto}.admin-card-grid{grid-template-columns:1fr}}
+
+
+/* ===== Scroll animations & polish ===== */
+html{scroll-behavior:smooth}
+body{overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 10%,rgba(85,216,106,.08),transparent 30%),radial-gradient(circle at 85% 30%,rgba(85,216,106,.05),transparent 28%);z-index:-1}
+#scrollProgress{position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,var(--accent),#9affaa);z-index:9999;box-shadow:0 0 12px rgba(85,216,106,.55);transition:width .08s linear}
+.brand-version{font-size:.55em;color:var(--accent);vertical-align:middle;letter-spacing:.02em}
+header{animation:heroIn .8s ease both}
+@keyframes heroIn{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(28px) scale(.985);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+.card,.panel,.tier-card,.admin-card,.form-card,.notice,.topbar,.table-wrap{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.card:hover,.panel:hover,.tier-card:hover,.admin-card:hover,.form-card:hover{transform:translateY(-4px);box-shadow:0 14px 35px rgba(0,0,0,.22);border-color:rgba(85,216,106,.45)}
+nav button,.action{transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+nav button:hover,.action:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(0,0,0,.2)}
+nav button:active,.action:active{transform:translateY(0) scale(.97)}
+.ripple{position:relative;overflow:hidden}
+.ripple-wave{position:absolute;border-radius:50%;transform:scale(0);animation:ripple .55s linear;background:rgba(255,255,255,.22);pointer-events:none}
+@keyframes ripple{to{transform:scale(4);opacity:0}}
+#backToTop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border:1px solid var(--border);border-radius:50%;background:var(--panel2);color:var(--text);font-size:20px;font-weight:800;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);transition:.25s;z-index:999}
+#backToTop.show{opacity:1;visibility:visible;transform:none}
+@media(max-width:600px){#backToTop{right:12px;bottom:12px}.reveal{transform:translateY(18px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,header{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.card,.panel,.tier-card,.admin-card,.form-card{transition:none}}
+
+.player-card-click{cursor:pointer}.rank-badge{display:inline-block;margin-top:6px;padding:4px 8px;border-radius:8px;background:#252c36;color:#7bea8a;font-size:12px;font-weight:700}.profile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:14px}.profile-item{padding:10px;border:1px solid var(--border);border-radius:10px;background:var(--panel2)}.profile-item small{display:block;color:var(--muted);margin-bottom:4px}.profile-skin{width:140px;height:140px;object-fit:contain;background:#090b0f;border:1px solid var(--border);border-radius:12px;padding:8px}.leaderboard-tier{margin:14px 0;border:1px solid var(--border);border-radius:14px;overflow-x:auto;overflow-y:hidden;background:rgba(17,21,27,.85);-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y}.leaderboard-tier-head,.leader-row{min-width:620px}.leader-row{cursor:pointer}.leader-row:active{background:rgba(85,216,106,.08)}
+.leaderboard-tier-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px;border-bottom:1px solid var(--border);background:rgba(255,255,255,.02)}
+.leaderboard-tier-title{font-weight:900;font-size:18px}.leaderboard-remain{color:var(--muted);font-size:13px}.leader-row{display:grid;grid-template-columns:38px 42px minmax(120px,1fr) auto auto;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid rgba(255,255,255,.06)}.leader-row:last-child{border-bottom:0}.leader-number{font-weight:900;color:var(--muted)}.leader-head{width:36px;height:36px;object-fit:cover;image-rendering:pixelated;border-radius:7px;border:1px solid var(--border);background:#090b0f}.leader-country{font-size:13px;color:var(--muted);white-space:nowrap}.leader-rank{font-size:12px;font-weight:800;color:#7bea8a;padding:4px 7px;border-radius:7px;background:#18251b}.skin-view-wrap{display:flex;justify-content:center;align-items:center}.skin-full-body{width:min(240px,80vw);height:300px;object-fit:contain;background:#090b0f;border:1px solid var(--border);border-radius:15px;padding:12px;image-rendering:pixelated}.skin-body-canvas{width:min(240px,80vw);height:320px;display:block;background:#090b0f;border:1px solid var(--border);border-radius:15px;image-rendering:pixelated}.asia-row{display:grid;grid-template-columns:55px 44px minmax(120px,1fr) auto auto;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.06)}.asia-row:last-child{border-bottom:0}.asia-number{font-weight:900;color:#ffd86b}.asia-empty{color:var(--muted);font-style:italic}.asia-head{width:38px;height:38px;border-radius:7px;border:1px solid var(--border);background:#090b0f;image-rendering:pixelated;object-fit:cover}
+.click-hint{color:var(--muted);font-size:11px;margin-top:5px}
+/* PRO FEATURES */
+.feature-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.feature-toolbar input,.feature-toolbar select{flex:1;min-width:140px}
+.theme-toggle{position:fixed;right:16px;bottom:16px;z-index:50;border-radius:999px;box-shadow:0 8px 25px #0008}
+.country-flag{font-size:20px;margin-right:5px}.verified{color:#55d86a;font-size:12px;font-weight:800}.status-pill{display:inline-block;padding:4px 8px;border-radius:999px;font-size:11px;font-weight:800;background:#28303b;color:#fff}.status-pending{background:#5b4610;color:#ffd86b}.status-testing{background:#183c63;color:#7fc8ff}.status-passed{background:#174d2a;color:#8cffad}.status-failed{background:#641e1e;color:#ff9b9b}
+.profile-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.profile-skin{width:150px;height:150px;object-fit:contain;background:#090b0f;border:1px solid var(--border);border-radius:15px;padding:10px}.history{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.history span{padding:5px 8px;border:1px solid var(--border);border-radius:7px;background:#171c24;font-size:12px}.mode-board{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:14px}.mode-card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px}.mode-card b{font-size:18px}.announcement{padding:12px 14px;border:1px solid #315838;background:#102015;border-radius:12px;margin:12px 0;color:#bfffc9}.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#11151b;border:1px solid var(--border);padding:12px 16px;border-radius:10px;z-index:100;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+body.light-mode{--bg:#f3f5f7;--panel:#fff;--panel2:#eef1f4;--text:#15191f;--muted:#5d6672;--border:#d5dbe2;background:#f3f5f7;color:var(--text)}
+body.light-mode header{background:#ffffffdd}.rank-badge{display:inline-block;padding:4px 7px;border-radius:6px;background:#315838;color:#bfffc9;font-size:11px;font-weight:800}.share-link{word-break:break-all;font-size:12px;color:#7fc8ff}
+@media(max-width:600px){.feature-toolbar{display:grid}.profile-skin{width:120px;height:120px}.theme-toggle{right:10px;bottom:10px}}
+
+/* ===== PREMIUM PLAYER PROFILE ===== */
+.player-profile-modal{background:rgba(2,5,8,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:14px}
+.player-profile-box{position:relative;max-width:760px!important;width:100%!important;max-height:92vh;overflow:auto;padding:0!important;border:1px solid rgba(255,255,255,.12)!important;border-radius:26px!important;background:linear-gradient(145deg,rgba(24,29,38,.98),rgba(10,13,18,.98))!important;box-shadow:0 30px 90px rgba(0,0,0,.65),0 0 0 1px rgba(85,216,106,.06) inset}
+.player-profile-close{position:absolute;right:16px;top:14px;z-index:5;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.07);color:#fff;font-size:25px;line-height:1;cursor:pointer}
+.player-profile-hero{padding:34px 24px 24px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(85,216,106,.16),transparent 48%),linear-gradient(180deg,rgba(255,255,255,.045),transparent)}
+.player-profile-avatar-wrap{width:190px;height:255px;margin:8px auto 18px;display:grid;place-items:center;border-radius:22px;border:1px solid rgba(255,255,255,.11);background:radial-gradient(circle,rgba(85,216,106,.11),rgba(8,11,15,.75) 65%);box-shadow:0 20px 45px rgba(0,0,0,.35),inset 0 0 35px rgba(255,255,255,.025);overflow:hidden}
+.player-profile-avatar-wrap .skin-body-canvas{width:175px;height:245px;border:0;background:transparent;box-shadow:none}
+.player-profile-name{font-size:30px;font-weight:950;letter-spacing:.4px;margin:0 45px 7px}
+.player-profile-meta{color:var(--muted);font-size:14px}
+.player-profile-badges{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:14px}
+.profile-pill{padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.09);font-size:12px;font-weight:800}
+.profile-pill.green{color:#7bea8a;border-color:rgba(85,216,106,.25);background:rgba(85,216,106,.08)}
+.profile-pill.gold{color:#ffd86b;border-color:rgba(255,216,107,.22);background:rgba(255,216,107,.07)}
+.player-profile-body{padding:0 22px 24px}
+.premium-section-title{font-size:12px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);font-weight:900;margin:20px 2px 10px}
+.premium-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.premium-info{padding:14px;border-radius:15px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.075);min-width:0}
+.premium-info.full{grid-column:1/-1}
+.premium-info small{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.premium-info b{display:block;font-size:14px;word-break:break-word;line-height:1.45}
+.premium-history{display:flex;gap:7px;flex-wrap:wrap}.premium-history span{padding:7px 9px;border-radius:9px;background:rgba(85,216,106,.07);border:1px solid rgba(85,216,106,.15);font-size:12px}
+.premium-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.premium-actions .action{min-height:48px;border-radius:14px}
+.asia-row{min-height:58px}.asia-empty-name{font-weight:800;color:var(--muted)}
+@media(max-width:600px){.player-profile-box{max-height:94vh;border-radius:22px!important}.player-profile-hero{padding:28px 16px 20px}.player-profile-avatar-wrap{width:170px;height:235px}.player-profile-name{font-size:25px}.player-profile-body{padding:0 14px 18px}.premium-grid{grid-template-columns:1fr}.premium-info.full{grid-column:auto}.premium-actions{grid-template-columns:1fr}.asia-row{grid-template-columns:40px 40px minmax(120px,1fr)!important}.asia-row .leader-rank,.asia-row .leader-country{display:none}}
+
+
+/* ASIA RANKING ROW FORMAT */
+.asia-row{grid-template-columns:45px 44px minmax(150px,1fr) auto minmax(130px,auto);min-width:560px;cursor:pointer}
+.asia-row.asia-unassigned{cursor:default}
+.asia-player-name{min-width:150px}.asia-final-number{font-weight:900;color:#ffd86b;text-align:center}.asia-head-fallback{display:grid;place-items:center;font-size:11px}.asia-row:focus-visible{outline:2px solid #55d86a;outline-offset:-2px}
+@media(max-width:600px){.asia-row{grid-template-columns:40px 40px minmax(140px,1fr) auto minmax(120px,auto)!important;min-width:560px}.asia-row .leader-rank,.asia-row .leader-country{display:block}.asia-player-name{min-width:140px}}
+
+/* Premium MCPE pixel/block UI */
+:root{--bg:#07110d;--panel:#0d1c15;--panel2:#14281d;--text:#f2f7ef;--muted:#9aaf9f;--accent:#a5ef69;--border:#294a35}
+body{font-family:ui-monospace,"Cascadia Code",Consolas,monospace;background-color:#07110d;background-image:linear-gradient(45deg,#0a1710 25%,transparent 25%),linear-gradient(-45deg,#0a1710 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#0a1710 75%),linear-gradient(-45deg,transparent 75%,#0a1710 75%);background-size:28px 28px;background-position:0 0,0 14px,14px -14px,-14px 0;color:var(--text)}
+body:before{background:linear-gradient(180deg,rgba(4,13,8,.22),rgba(4,13,8,.88)),radial-gradient(circle at 50% 0,rgba(132,217,87,.13),transparent 50%)}
+header.pixel-header{padding:25px 18px 22px;text-align:left;border-bottom:3px solid #385e3b;background:linear-gradient(180deg,rgba(9,28,17,.98),rgba(6,17,11,.97));box-shadow:0 8px 0 rgba(0,0,0,.22);animation:none}
+.pixel-brandline{max-width:1100px;margin:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:#b8eaa2;font-size:11px;font-weight:900;letter-spacing:1.4px}
+.pixel-cube{display:grid;place-items:center;width:32px;height:32px;background:#a5ef69;color:#0a1a0c;border:3px solid #d4ffb4;box-shadow:4px 4px 0 #294b2e;font-size:22px}
+.pixel-version{margin-left:auto;color:#8fa995}
+header h1{max-width:1100px;margin:23px auto 10px;font-size:clamp(29px,5.5vw,56px);line-height:1.08;letter-spacing:-1.8px;text-transform:uppercase;font-weight:1000;text-shadow:4px 4px 0 #183723}
+header h1 span{color:#a5ef69}header .subtitle{max-width:1100px;margin:auto;color:#a7bcaa;line-height:1.7;font-size:14px}
+.main-nav{max-width:1100px;justify-content:flex-start;margin:23px auto 0;gap:10px}
+nav button,.action{border-radius:2px;border:2px solid #365d3c;background:#13281b;color:#eaf6e6;padding:12px 17px;box-shadow:3px 3px 0 #030906;font-family:inherit}
+nav button.active,.action.primary{background:#a5ef69;color:#10200e;border-color:#d4ffb4}
+nav button:hover,.action:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 #030906}
+.admin-nav{margin-left:auto;opacity:.7;font-size:12px}
+main{max-width:1100px;margin:30px auto;padding:0 18px}
+.section-intro{padding:8px 0 20px}.section-kicker{display:block;color:#a5ef69;font-size:10px;font-weight:1000;letter-spacing:2px;margin-bottom:10px}
+.section-intro h2{font-size:clamp(26px,4vw,38px);margin:0 0 8px}.section-intro h2 span{color:#a5ef69}
+.section-intro p,.board-footnote{max-width:720px;color:var(--muted);font-size:13px;line-height:1.8}
+.top-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:10px 0 30px;align-items:stretch}
+.podium-card{min-width:0;padding:18px 14px;background:linear-gradient(145deg,#152d1e,#0b1a11);border:2px solid #365d3c;box-shadow:5px 5px 0 #020805;text-align:center;overflow:hidden}
+.podium-card.first{border-color:#b7e777;background:linear-gradient(145deg,#2c3a1d,#102116);transform:translateY(-7px)}
+.podium-place{font-size:10px;letter-spacing:2px;color:#b4c7b6;font-weight:900}.podium-number{font-size:28px;font-weight:1000;color:#a5ef69;margin:5px 0}
+.podium-card.first .podium-number{color:#f6d56b;font-size:36px}
+.podium-avatar{width:60px;height:60px;margin:8px auto 12px;background:#1c3524;border:2px solid #648b54;image-rendering:pixelated;display:grid;place-items:center;font-size:23px;overflow:hidden}
+.podium-avatar img{width:100%;height:100%;object-fit:cover;image-rendering:pixelated}
+.podium-name{font-size:14px;font-weight:1000;overflow-wrap:anywhere;margin-bottom:7px}.podium-meta{font-size:11px;color:#9fb5a2;line-height:1.7;overflow-wrap:anywhere}
+.podium-tier{display:inline-block;margin-top:10px;padding:5px 8px;background:#a5ef69;color:#10200e;font-size:10px;font-weight:1000;border:2px solid #d4ffb4}
+.ranking-panel{border:2px solid #365d3c;background:rgba(7,20,12,.97);box-shadow:6px 6px 0 #020805}
+.ranking-panel-head{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px;border-bottom:2px solid #294a35;background:linear-gradient(90deg,#14291b,#0b1910)}
+.ranking-panel-head h3{font-size:21px;margin:0}.count-tag{display:inline-block;font-size:10px;color:#0b1b0d;background:#a5ef69;padding:5px 7px;vertical-align:middle;margin-left:6px}
+.rank-search-wrap input{min-width:190px;width:100%}
+.ranking-columns,.ranking-row{display:grid;grid-template-columns:72px minmax(0,1fr) minmax(110px,.6fr) 100px;align-items:center;gap:12px;padding:12px 18px}
+.ranking-columns{font-size:9px;font-weight:1000;letter-spacing:1.5px;color:#90a995;background:#0b170f;border-bottom:1px solid #294a35}
+.ranking-row{min-height:62px;border-bottom:1px solid rgba(100,151,104,.18);background:rgba(18,42,26,.38)}
+.ranking-row:nth-child(even){background:rgba(31,57,35,.35)}.ranking-row:hover{background:rgba(165,239,105,.08)}.ranking-row:last-child{border-bottom:0}
+.rank-num{font-size:15px;font-weight:1000;color:#a5ef69}.rank-player{display:flex;align-items:center;gap:12px;min-width:0}
+.rank-head{width:38px;height:38px;flex:0 0 38px;object-fit:cover;image-rendering:pixelated;border:2px solid #365d3c;background:#12271a}
+.rank-player-name{font-size:13px;font-weight:900;overflow-wrap:anywhere}.rank-player-sub{display:block;color:#78917d;font-size:10px;margin-top:4px}
+.rank-country{font-size:12px;color:#a8bbaa;overflow-wrap:anywhere}.rank-tier{justify-self:start;max-width:100%;padding:5px 7px;border:1px solid #527b45;background:#172c1b;color:#b7ef92;font-size:10px;font-weight:1000;overflow-wrap:anywhere}
+.rank-tier.unset{color:#728778;border-color:#2c4231;background:#0e1b12;font-weight:600}.ranking-empty{color:#738b78;font-size:12px;font-style:italic}
+.board-footnote{margin:18px 0 0;font-size:11px}#test .box{border-radius:2px!important;border:2px solid #365d3c;box-shadow:5px 5px 0 #020805;background:#0c1c12}
+#test .topbar h2{font-size:clamp(27px,4vw,38px)}.form{gap:9px}.form label{font-size:12px;color:#d7e8d8;margin-top:5px}
+input,select,textarea{width:100%;min-width:0;border-radius:2px!important;border:2px solid #2e4c34!important;background:#08150d!important;color:#f0f7ed!important;padding:13px!important;font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid #a5ef69;outline-offset:1px}input[type=file]{padding:9px!important}
+.optional-label{font-size:11px;color:#8ea992;font-weight:400}.submission-note{border-left:4px solid #a5ef69;background:#14271a;padding:13px 15px;color:#c4d6c6;font-size:12px;line-height:1.8}.submission-note p{margin:5px 0 0}
+#testMessage{line-height:1.7}footer{border-top:2px solid #294a35;color:#809783;font-size:11px;letter-spacing:.5px}
+.modal .box{border-radius:2px;background:#0c1c12;border:2px solid #365d3c}#backToTop{border-radius:2px}
+@media(max-width:650px){
+ header.pixel-header{padding:18px 14px}.pixel-brandline{font-size:9px;letter-spacing:.7px;gap:7px}.pixel-version{width:100%;margin-left:42px}
+ header h1{margin-top:19px;letter-spacing:-1.3px}header .subtitle{font-size:12px}
+ .main-nav{display:grid;grid-template-columns:1fr 1fr}.main-nav button{padding:12px 8px;font-size:11px}.main-nav .admin-nav{margin:0;grid-column:1/-1}
+ main{padding:0 12px;margin:22px auto}.top-three{gap:7px;margin-bottom:22px}.podium-card{padding:13px 6px;box-shadow:3px 3px 0 #020805}.podium-card.first{transform:translateY(-3px)}
+ .podium-number{font-size:22px}.podium-card.first .podium-number{font-size:28px}.podium-avatar{width:43px;height:43px;font-size:18px}.podium-name{font-size:11px}.podium-meta{font-size:9px}.podium-tier{font-size:9px;padding:4px 5px}
+ .ranking-panel-head{align-items:stretch;flex-direction:column;padding:15px}.ranking-panel-head h3{font-size:18px}.rank-search-wrap input{min-width:0}
+ .ranking-columns{grid-template-columns:42px minmax(0,1fr) 66px;gap:7px;padding:10px}.ranking-columns span:nth-child(3){display:none}
+ .ranking-row{grid-template-columns:42px minmax(0,1fr) 66px;gap:7px;padding:9px 10px;min-height:58px}.rank-player{gap:7px}.rank-head{width:31px;height:31px;flex-basis:31px}
+ .rank-player-name{font-size:11px}.rank-player-sub{font-size:9px}.rank-country{display:none}.rank-tier{font-size:9px;padding:4px 5px}
+ .section-intro p{font-size:12px}#test .box{padding:16px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* ===== Purple minimal MC-Tier-inspired skinless theme ===== */
+:root{--bg:#0c0913;--panel:#15111f;--panel2:#1d172b;--text:#f5f1ff;--muted:#a69bb9;--accent:#a879ff;--border:#302440}
+body{background:radial-gradient(ellipse at top,#211334 0,#0c0913 48%);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{background:rgba(12,9,19,.92);border-bottom-color:#302440}
+.badge{border-color:#62418d;color:#c9a8ff}
+nav button.active,.action.primary{background:#a879ff;color:#160b25;border-color:#a879ff}
+.tier,.leaderboard-tier{background:#15111f;border-color:#302440;border-radius:16px}
+.tier-head,.leaderboard-tier-head{background:#191323;border-color:#302440}
+.tier-label{background:#513277;color:#fff}
+.tier[data-tier="S+"] .tier-label{background:#e0b45a;color:#211508}
+.tier[data-tier="S"] .tier-label{background:#c85a8e;color:#fff}
+.tier[data-tier="A"] .tier-label{background:#a879ff;color:#160b25}
+.tier[data-tier="B"] .tier-label{background:#7050ad;color:#fff}
+.tier[data-tier="C"] .tier-label{background:#4d779f;color:#fff}
+.tier[data-tier="D"] .tier-label{background:#55505f;color:#fff}
+.card,.stat,.admin-card,.mode-card,.profile-item,.box{background:#171220;border-color:#302440;border-radius:13px}
+.card:hover,.panel:hover,.tier-card:hover,.admin-card:hover,.form-card:hover{border-color:rgba(168,121,255,.45)}
+.rank-badge,.leader-rank{background:#2a1d3b;color:#d4b9ff}
+.admin-table th{color:#d4b9ff;background:#1d172b}
+body::before{background:radial-gradient(circle at 15% 10%,rgba(168,121,255,.09),transparent 30%),radial-gradient(circle at 85% 30%,rgba(168,121,255,.06),transparent 28%)}
+#scrollProgress{background:linear-gradient(90deg,#8b5cf6,#d8b4fe);box-shadow:0 0 12px rgba(168,121,255,.4)}
+.card:hover,.panel:hover,.tier-card:hover,.admin-card:hover,.form-card:hover{box-shadow:0 12px 28px rgba(0,0,0,.2)}
+.leader-row:active{background:rgba(168,121,255,.09)}
+.leader-number{color:#a69bb9}.leader-country{color:#b7acc9}
+/* No player skin images or skin render canvases anywhere in the public UI */
+.profile-skin,.player-profile-avatar-wrap,.skin-view-wrap,.skin-full-body,.skin-body-canvas,.leader-head,.asia-head{display:none!important}
+.player-profile-hero{background:radial-gradient(circle at 50% 0,rgba(168,121,255,.12),transparent 48%),linear-gradient(180deg,rgba(255,255,255,.025),transparent)}
+.player-profile-box{background:linear-gradient(145deg,rgba(27,20,39,.98),rgba(12,9,19,.98))!important;box-shadow:0 30px 90px rgba(0,0,0,.55),0 0 0 1px rgba(168,121,255,.06) inset}
+.profile-pill.green{color:#d4b9ff;border-color:rgba(168,121,255,.25);background:rgba(168,121,255,.08)}
+.status-passed{background:#2a1d3b;color:#d4b9ff}
+input:focus,select:focus,textarea:focus{border-color:#a879ff!important;box-shadow:0 0 0 3px rgba(168,121,255,.12)}
+@media(max-width:600px){header{padding:30px 16px 24px}main{padding:0 12px}.leader-row{gap:8px}}
+
+/* Top 10 extension: premium purple list, no skin imagery */
+.top-ten-list{display:grid;gap:10px;margin:18px 0 28px}
+.top-ten-row{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:13px;padding:15px 16px;border:1px solid #39274d;border-radius:15px;background:linear-gradient(110deg,#171020,#100d18);box-shadow:0 5px 16px #0003}
+.top-ten-position{font-size:23px;font-weight:900;color:#c5a4ff;text-align:center}
+.top-ten-player{min-width:0;display:flex;flex-direction:column;gap:4px}.top-ten-player b{color:#f4efff;font-size:15px;overflow-wrap:anywhere}.top-ten-player small{color:#a99bbd;font-size:12px}
+.top-ten-tier{background:#2c1e40;border:1px solid #67468b;color:#d7bcff;border-radius:8px;padding:6px 9px;font-size:12px;font-weight:800;white-space:nowrap}
+@media(max-width:440px){.top-ten-row{grid-template-columns:34px minmax(0,1fr) auto;padding:13px 10px;gap:9px}.top-ten-position{font-size:20px}.top-ten-player b{font-size:13px}.top-ten-player small{font-size:10px}.top-ten-tier{font-size:10px;padding:5px 6px}}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://mcpetier.github.io/MCPE-Tier-List/#website",
+      "url":"https://mcpetier.github.io/MCPE-Tier-List/",
+      "name":"MCPE Tier List",
+      "description":"MCPE 0.15.10 tier list and tier test for Minecraft Pocket Edition PvP.",
+      "inLanguage":"en",
+      "publisher":{"@id":"https://mcpetier.github.io/MCPE-Tier-List/#creator"}
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://mcpetier.github.io/MCPE-Tier-List/#webpage",
+      "url":"https://mcpetier.github.io/MCPE-Tier-List/",
+      "name":"MCPE 0.15.10 Tier List & Tier Test | Minecraft PE PvP",
+      "description":"Explore player rankings, profiles, Asia rankings, testing rules, and submit a Minecraft PE 0.15.10 PvP tier test.",
+      "isPartOf":{"@id":"https://mcpetier.github.io/MCPE-Tier-List/#website"},
+      "about":{"@id":"https://mcpetier.github.io/MCPE-Tier-List/#game"}
+    },
+    {
+      "@type":"Person",
+      "@id":"https://mcpetier.github.io/MCPE-Tier-List/#creator",
+      "name":"RialZylos",
+      "url":"https://mcpetier.github.io/MCPE-Tier-List/"
+    },
+    {
+      "@type":"VideoGame",
+      "@id":"https://mcpetier.github.io/MCPE-Tier-List/#game",
+      "name":"Minecraft Pocket Edition 0.15.10"
+    }
+  ]
+}
+</script>
+  <link rel="canonical" href="https://mcpetier.github.io/MCPE-Tier-List/">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+
+<style id="mcpe-pixel-ui-redesign">
+/* MCPE Tier List: pixel/block UI skin. Existing markup, Firebase code, IDs and workflows remain intact. */
+:root{--bg:#10170f;--panel:#1b2818;--panel2:#263820;--text:#f4f7e9;--muted:#b4c3a7;--accent:#a6e35b;--border:#405438;--pixel-line:#0a1008;--tier-gold:#ffd166}
+*{box-sizing:border-box}
+html{scroll-padding-top:18px}
+body{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;background-color:#10170f;background-image:linear-gradient(rgba(6,12,5,.55),rgba(6,12,5,.75)),repeating-linear-gradient(0deg,transparent 0 31px,rgba(169,223,113,.035) 31px 32px),repeating-linear-gradient(90deg,transparent 0 31px,rgba(169,223,113,.035) 31px 32px);color:var(--text);line-height:1.55}
+body::before{background:radial-gradient(circle at 12% 8%,rgba(166,227,91,.12),transparent 30%),radial-gradient(circle at 92% 22%,rgba(83,147,56,.13),transparent 32%)}
+header{padding:clamp(24px,5vw,52px) 16px 24px;background:linear-gradient(180deg,#1c3019f2,#111a10f2);border-bottom:4px solid var(--pixel-line);box-shadow:0 7px 0 #263c20,0 14px 35px #0006;animation:none}
+header:after{content:"MINECRAFT PE 0.15.10  //  PROTOCOL 84";display:block;margin:22px auto 0;color:#a6e35b;font-size:11px;letter-spacing:2px;font-weight:900}
+.badge{border:2px solid #83b94b;border-radius:2px;background:#263d20;color:#d5ff9e;padding:8px 12px;letter-spacing:1.5px;box-shadow:4px 4px 0 #080e07}
+h1{font-size:clamp(29px,6vw,58px);font-weight:1000;letter-spacing:clamp(0px,.8vw,3px);line-height:1.12;text-shadow:4px 4px 0 #10170f,6px 6px 0 #456f2c;margin:18px 0 12px}
+.brand-version{color:#c7f58b;text-shadow:none}
+.subtitle{color:#bdcdae;max-width:720px}
+nav{gap:8px;margin-top:25px}
+nav button,.action,button{font-family:inherit;font-weight:900;border:2px solid #4c6540;border-radius:2px;background:#263820;color:#eff8e4;box-shadow:4px 4px 0 #080e07;transition:transform .12s,background .12s,border-color .12s;min-height:42px}
+nav button{padding:11px 13px}
+nav button:hover,.action:hover,button:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 #080e07;border-color:#a6e35b}
+nav button.active,nav button:focus-visible,.action.primary{background:#a6e35b;color:#13200d;border-color:#d3ff9e;box-shadow:4px 4px 0 #080e07}
+main{max-width:1240px;margin:28px auto;padding:0 clamp(12px,2.5vw,28px)}
+main h2{font-size:clamp(22px,3.4vw,32px);letter-spacing:.4px;text-transform:uppercase;text-shadow:2px 2px 0 #070c06}
+main h3{color:#d8f8b8}
+input,select,textarea{font:inherit;background:#111b10;color:#f4f7e9;border:2px solid #42583a;border-radius:2px;padding:12px;min-height:44px;box-shadow:inset 3px 3px 0 #080e07;max-width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid #a6e35b;outline-offset:2px;border-color:#a6e35b}
+input{min-width:min(220px,100%)}
+.topbar{padding:15px;background:#1a2917;border:2px solid var(--border);box-shadow:5px 5px 0 #080e07}
+.announcement,.notice{background:#263d20;border:2px solid #668d45;border-radius:2px;color:#e2ffd0;box-shadow:4px 4px 0 #080e07}
+.tier,.leaderboard-tier,.box,.panel,.admin-card,.form-card,.mode-card,.stat,.profile-item,.premium-info,.table-wrap{background:#1b2818;border:2px solid #405438;border-radius:2px;box-shadow:5px 5px 0 #080e07;overflow-wrap:anywhere}
+.tier{margin:20px 0}
+.tier-head{background:#253820;border-bottom:2px solid #10170f;padding:14px}
+.tier-label{width:58px;height:52px;border-radius:2px;border:2px solid #10170f;box-shadow:3px 3px 0 #080e07;font-size:22px;image-rendering:pixelated}
+.tier[data-tier="S+"] .tier-label{background:#ffcc4d;color:#392500}.tier[data-tier="S"] .tier-label{background:#e95d54;color:#280a08}.tier[data-tier="A+"] .tier-label{background:#ff9f50;color:#321600}.tier[data-tier="A"] .tier-label{background:#d982c7;color:#2c0d28}.tier[data-tier="B+"] .tier-label{background:#8e9aff;color:#0c153e}.tier[data-tier="B"] .tier-label{background:#5c9be5;color:#061a31}.tier[data-tier="C"] .tier-label{background:#65c7b0;color:#06251e}.tier[data-tier="C-"] .tier-label{background:#a0c47a;color:#14240a}.tier[data-tier="D"] .tier-label{background:#89918a;color:#171b17}
+.cards{gap:12px;padding:16px;min-height:100px}
+.card{width:clamp(125px,15%,170px);min-height:112px;border:2px solid #405438;border-radius:2px;background:#2b3c26;box-shadow:3px 3px 0 #080e07;padding:12px;cursor:pointer}
+.card:hover,.admin-card:hover,.panel:hover,.form-card:hover{transform:translateY(-2px);border-color:#a6e35b;box-shadow:5px 7px 0 #080e07}
+.card .avatar{border-radius:2px;border:2px solid #4f6c43;background:#152112;image-rendering:pixelated}
+.card small,.tier-info small{color:#c0d0b4}
+.stats{gap:14px}.stat{padding:18px}.stat b{font-size:clamp(24px,4vw,34px);color:#c8f68c}.stat span{color:#bdcdae}
+.modal{background:#050805d9;backdrop-filter:blur(4px)}.box{max-width:760px;border-color:#64834d;padding:clamp(15px,3vw,26px)}.close{color:#d8f8b8}
+.admin-table{background:#1b2818;border:2px solid #405438;border-radius:2px}.admin-table th{background:#2b4024;color:#d6ff9f}.admin-table td{color:#eff8e4}.admin-table th,.admin-table td{border-bottom:1px solid #405438}
+.admin-card-grid{color:#c7d8bc}.admin-card-grid b{color:#fff}
+.leaderboard-tier{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}.leaderboard-tier-head{background:#253820;border-bottom:2px solid #10170f}.leaderboard-tier-head,.leader-row{min-width:600px}.leader-row{min-height:58px;border-bottom:1px solid #405438}.leader-row:hover,.asia-row:hover{background:#2a3c24}.leader-number{color:#d4e2c7}.leader-head,.asia-head{border:2px solid #5b744e;border-radius:2px;image-rendering:pixelated}.leader-rank,.rank-badge{background:#2f4b26;color:#d6ff9f;border:1px solid #658b4a;border-radius:2px}.leader-country{color:#bdcdae}
+.asia-row{min-height:60px;border-bottom:1px solid #405438}.asia-number,.asia-final-number{color:#ffda69}.asia-row:focus-visible{outline:2px solid #a6e35b;outline-offset:-2px}
+.profile-skin,.skin-full-body,.skin-body-canvas{background:#111b10;border:2px solid #405438;border-radius:2px;image-rendering:pixelated}.player-profile-modal{background:#050805e8;backdrop-filter:blur(8px)}.player-profile-box{background:#172315!important;border:2px solid #63854b!important;border-radius:3px!important;box-shadow:8px 8px 0 #050805!important}.player-profile-hero{background:linear-gradient(180deg,#2c4324,transparent)}.player-profile-avatar-wrap{border:2px solid #4b6b3b;border-radius:2px;background:#111b10}.player-profile-close{border-radius:2px;background:#263820;border:2px solid #4c6540;color:#eff8e4}.premium-info{background:#202f1b;border-color:#405438}.premium-section-title{color:#c1d5b3}
+.feature-toolbar{gap:10px}.feature-toolbar input,.feature-toolbar select{min-width:min(160px,100%)}
+.status-pill,.profile-pill{border-radius:2px;border:1px solid #506b43}.status-passed{background:#234a20;color:#caffaa}.status-pending{background:#574719;color:#ffe59a}.status-failed{background:#5a2722;color:#ffc0b9}.status-testing{background:#233d52;color:#b6e1ff}
+footer{color:#b4c3a7;border-top:2px solid #405438;background:#10170f;margin-top:50px}
+#backToTop,.theme-toggle{border-radius:2px;border:2px solid #668d45;background:#263820;color:#eff8e4;box-shadow:4px 4px 0 #080e07}
+.toast{background:#1b2818;border:2px solid #668d45;border-radius:2px;color:#eff8e4}
+body.light-mode{--bg:#e6eedf;--panel:#f5faef;--panel2:#e1ecd7;--text:#1b2818;--muted:#4c6044;--border:#9caf8e;background:#e6eedf;color:#1b2818}
+body.light-mode header{background:#d8e8cb}.light-mode input,.light-mode select,.light-mode textarea{background:#f5faef;color:#1b2818}.light-mode .card,.light-mode .tier,.light-mode .box,.light-mode .stat,.light-mode .admin-card{background:#f5faef;color:#1b2818}.light-mode .admin-table td{color:#1b2818}
+@media(max-width:760px){header{padding:24px 12px 20px}nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}nav button{width:100%;min-width:0;padding:10px 7px;font-size:12px;overflow-wrap:anywhere}.topbar{align-items:stretch}.topbar>div{min-width:0;width:100%}.topbar input,.topbar select{width:100%;min-width:0}.feature-toolbar{display:grid;grid-template-columns:1fr}.feature-toolbar input,.feature-toolbar select{width:100%;min-width:0}.stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.stat{padding:12px 8px}.stat b{font-size:22px}.stat span{font-size:10px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{width:auto;min-width:0;min-height:105px}.leaderboard-tier-head,.leader-row{min-width:570px}.asia-row{min-width:540px}.admin-card-grid{grid-template-columns:1fr}.box{width:100%;max-height:92dvh;overflow:auto}.premium-grid{grid-template-columns:1fr}.premium-info.full{grid-column:auto}.premium-actions{grid-template-columns:1fr}.player-profile-box{max-height:94dvh}.player-profile-name{font-size:clamp(21px,6vw,28px)}main{margin:20px auto}.tier-head{gap:10px}.tier-label{flex:0 0 50px;width:50px;height:48px}}
+@media(max-width:380px){nav{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}.card{padding:10px}.leaderboard-tier-head,.leader-row{min-width:540px}}
+@media(hover:none){.card:hover,.admin-card:hover,.panel:hover,.form-card:hover{transform:none;box-shadow:3px 3px 0 #080e07}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+
+
+<style id="mc-tier-purple-final-fix">
+/* Purple premium MC-Tier-inspired theme: deliberately overrides previous green pixel theme */
+:root{--bg:#0b0812!important;--panel:#15101f!important;--panel2:#20172e!important;--text:#f7f3ff!important;--muted:#a99bbd!important;--accent:#a879ff!important;--border:#342344!important;color-scheme:dark}
+html,body{background:#0b0812!important;color:#f7f3ff!important;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif!important}
+body{background-image:radial-gradient(ellipse at 50% 0%,#251438 0, #100b19 43%,#0b0812 78%)!important;background-size:auto!important}
+body:before{background:radial-gradient(circle at 15% 8%,rgba(168,121,255,.13),transparent 30%),radial-gradient(circle at 90% 30%,rgba(168,121,255,.08),transparent 30%)!important}
+header.pixel-header{background:linear-gradient(160deg,#191025,#100b19 72%)!important;border-bottom:1px solid #39264e!important;box-shadow:none!important}
+.pixel-brandline{color:#cbb2ff!important}.pixel-cube{background:#a879ff!important;color:#1a0d29!important;border:1px solid #d6baff!important;box-shadow:none!important}.pixel-version{color:#a99bbd!important}
+header h1{text-shadow:none!important;letter-spacing:-1.2px!important}header h1 span,.section-intro h2 span,.section-kicker{color:#b994ff!important}header .subtitle{color:#b6a9c6!important}
+nav button,.action{font-family:inherit!important;border:1px solid #443054!important;border-radius:12px!important;background:#1b1426!important;color:#f0e7ff!important;box-shadow:none!important}
+nav button.active,.action.primary{background:#a879ff!important;color:#1a0d29!important;border-color:#c8a8ff!important}
+nav button:hover,.action:hover{transform:translateY(-1px)!important;box-shadow:0 7px 20px #0004!important}
+.section-intro p,.board-footnote{color:#a99bbd!important}
+.top-three{gap:12px!important}.podium-card,.podium-card.first{background:linear-gradient(145deg,#21172f,#15101f)!important;border:1px solid #443054!important;border-radius:18px!important;box-shadow:0 8px 24px #0003!important;transform:none!important}
+.podium-place{color:#b8a7cb!important}.podium-number,.podium-card.first .podium-number{color:#c5a4ff!important;text-shadow:none!important}.podium-avatar{display:none!important}.podium-name{color:#f7f3ff!important}.podium-meta{color:#a99bbd!important}.podium-tier{background:#2c1e40!important;color:#d7bcff!important;border:1px solid #67468b!important;border-radius:8px!important}
+.ranking-panel{background:#120d1b!important;border:1px solid #382648!important;border-radius:18px!important;overflow:hidden!important;box-shadow:0 12px 30px #0003!important}.ranking-panel-head{background:#191123!important;border-bottom:1px solid #382648!important}.ranking-panel-head h3{color:#f7f3ff!important}.count-tag{background:#2d1e42!important;color:#d9c2ff!important;border-radius:7px!important}
+.ranking-columns{background:#110c19!important;color:#a99bbd!important;border-bottom:1px solid #30213f!important}.ranking-row,.ranking-row:nth-child(even){background:#15101f!important;border-bottom:1px solid #2b1e39!important}.ranking-row:hover{background:#20162e!important}.rank-num{color:#c5a4ff!important}.rank-head{display:none!important}.rank-player{gap:0!important}.rank-player-name{color:#f4edff!important;font-size:14px!important}.rank-player-sub{color:#a99bbd!important}.rank-country{color:#b7a8ca!important}.rank-tier{background:#2a1d3b!important;border:1px solid #60417f!important;color:#d9c2ff!important;border-radius:8px!important}.rank-tier.unset{background:#17111f!important;border-color:#342440!important;color:#837591!important}
+#test .box,.modal .box{background:#171020!important;border:1px solid #443054!important;border-radius:16px!important;box-shadow:0 12px 32px #0004!important}input,select,textarea{background:#100b18!important;color:#f7f3ff!important;border:1px solid #443054!important;border-radius:10px!important;font-family:inherit!important}input:focus,select:focus,textarea:focus{outline:2px solid #a879ff!important} .submission-note{border-left:3px solid #a879ff!important;background:#20162d!important;color:#d5c6e7!important}footer{border-top:1px solid #30213f!important;color:#887a98!important}
+#scrollProgress{background:linear-gradient(90deg,#8b5cf6,#d8b4fe)!important;box-shadow:0 0 12px rgba(168,121,255,.4)!important}.theme-toggle{background:#20172e!important;border-color:#49335f!important;color:#e9dcff!important}
+.card,.stat,.admin-card,.mode-card,.profile-item,.tier,.leaderboard-tier{background:#15101f!important;border-color:#342344!important;border-radius:14px!important}.tier-head,.leaderboard-tier-head{background:#1b1426!important;border-color:#342344!important}.rank-badge,.leader-rank{background:#2a1d3b!important;color:#d4b9ff!important}
+@media(max-width:650px){.ranking-row{grid-template-columns:34px minmax(0,1fr) 58px!important}.ranking-columns{grid-template-columns:34px minmax(0,1fr) 58px!important}.rank-player-name{font-size:12px!important}.podium-card{border-radius:13px!important;box-shadow:0 5px 15px #0003!important}.main-nav button{box-shadow:none!important}}
+</style>
+
+<style id="rialzylos-cool-interface">
+:root{--bg:#080611!important;--panel:#110c1d!important;--panel2:#1a1229!important;--text:#f7f3ff!important;--muted:#aaa0bd!important;--accent:#b18aff!important;--border:#38264f!important;color-scheme:dark}
+html{scroll-behavior:smooth;background:#080611}body{background:radial-gradient(ellipse at 50% -10%,#352052 0,transparent 42%),radial-gradient(ellipse at 100% 40%,#1b1230 0,transparent 35%),#080611!important;color:#f7f3ff!important;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif!important;line-height:1.55}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:radial-gradient(rgba(190,150,255,.14) .7px,transparent .7px);background-size:24px 24px;opacity:.24}
+.pixel-header{position:relative;overflow:hidden;padding:30px 18px 22px!important;background:linear-gradient(135deg,rgba(31,19,49,.97),rgba(10,8,19,.96))!important;border:1px solid #493260!important;border-radius:0 0 28px 28px!important;box-shadow:0 18px 65px #0008,inset 0 -1px #b18aff22!important}
+.pixel-header:after{content:"";position:absolute;left:8%;right:8%;bottom:0;height:2px;background:linear-gradient(90deg,transparent,#b18aff,#f0d8ff,#b18aff,transparent);opacity:.8}
+.pixel-brandline{color:#d7c3ff!important;letter-spacing:2px!important;font-size:11px!important;gap:10px!important}.pixel-cube{display:grid;place-items:center;background:linear-gradient(135deg,#c8aaff,#8b5de2)!important;color:#170e24!important;border:0!important;border-radius:13px!important;box-shadow:0 0 28px #a879ff45!important}.pixel-version{color:#a99aba!important}
+.pixel-header h1{font-size:clamp(30px,7vw,54px)!important;line-height:1.08!important;letter-spacing:-1.8px!important;font-weight:950!important;margin:26px auto 14px!important;text-shadow:0 4px 25px #a879ff20!important}.pixel-header h1 span{color:#c7a7ff!important;text-shadow:0 0 30px #a879ff55!important}.subtitle{max-width:690px;color:#b8adc9!important;font-size:15px!important;line-height:1.8!important}
+.main-nav{display:flex!important;flex-wrap:wrap;justify-content:center;gap:9px!important;margin:25px auto 0!important;padding:8px!important;background:#090611b8!important;border:1px solid #39264e!important;border-radius:17px!important;box-shadow:inset 0 1px #ffffff08,0 12px 28px #0003!important;max-width:850px}
+.main-nav button{flex:1 1 110px!important;min-height:44px!important;padding:12px 15px!important;border:1px solid transparent!important;border-radius:11px!important;background:transparent!important;color:#b7a9ca!important;font-weight:750!important;font-size:13px!important;letter-spacing:.1px!important;box-shadow:none!important;transition:transform .18s ease,border-color .18s ease,background .18s ease,color .18s ease!important}
+.main-nav button:hover{transform:translateY(-2px)!important;background:#211531!important;color:#fff!important;border-color:#67458b!important}.main-nav button.active{background:linear-gradient(135deg,#c5a5ff,#9563e8)!important;color:#170d24!important;border-color:#decaff!important;box-shadow:0 5px 20px #a879ff32!important}.main-nav .admin-nav{background:#25152f!important;color:#e3ccff!important;border-color:#53366b!important}
+main{max-width:1060px!important;margin:30px auto!important;padding:0 18px!important}.section-intro{padding:24px!important;margin:0 0 18px!important;border:1px solid #3b2950!important;border-radius:20px!important;background:linear-gradient(135deg,#171025eF,#100b19ed)!important;box-shadow:0 15px 40px #0003!important}.section-kicker{color:#c4a5ff!important;letter-spacing:2px!important;font-size:10px!important;font-weight:850!important}.section-intro h2{font-size:clamp(24px,5vw,34px)!important;letter-spacing:-.7px!important;margin:8px 0!important;color:#f7f1ff!important}.section-intro h2 span{color:#b18aff!important}.section-intro p,.board-footnote{color:#aaa0bd!important;line-height:1.7!important}
+.ranking-panel,.leaderboard-tier,.tier-rank-board,.box,.panel,.form-card,.admin-card{background:linear-gradient(145deg,#171025,#100b19)!important;border:1px solid #39284e!important;border-radius:18px!important;box-shadow:0 12px 34px #0003!important}.ranking-panel{overflow:hidden}.ranking-panel-head{padding:18px!important;border-bottom:1px solid #342343!important}.ranking-panel-head h3{font-size:19px!important}.ranking-columns{background:#1c1429!important;color:#9f8bb7!important;border-bottom:1px solid #38264f!important}.ranking-row,.top-ten-row{background:#120d1e!important;border-bottom:1px solid #2b1e3b!important;transition:background .18s ease!important}.ranking-row:hover,.top-ten-row:hover{background:#211531!important}.ranking-row:last-child,.top-ten-row:last-child{border-bottom:0}.ranking-number,.ranking-position,.top-ten-position{color:#c4a3ff!important;font-weight:900!important}.rank-player-name,.top-ten-player b{color:#f5efff!important;font-weight:800!important}.rank-country,.top-ten-player small{color:#aaa0bd!important}.rank-player-tier,.top-ten-tier,.rank-badge{background:#2a1c3c!important;color:#d7bdff!important;border:1px solid #5a3b79!important;border-radius:8px!important}
+.top-three{align-items:end!important;gap:12px!important;margin:25px auto!important;max-width:780px!important}.podium-card,.podium-card.first{position:relative!important;overflow:hidden!important;border:1px solid #51376c!important;border-radius:20px!important;background:linear-gradient(160deg,#241737,#100b19 78%)!important;box-shadow:0 18px 36px #0005,inset 0 1px #ffffff0c!important;transform:none!important;transition:transform .2s ease,border-color .2s ease!important}.podium-card:hover{transform:translateY(-5px)!important;border-color:#bd9aff!important}.podium-card.first{background:linear-gradient(160deg,#3a2850,#171022 80%)!important;border-color:#b18aff!important;box-shadow:0 0 32px #a879ff19,0 18px 36px #0005!important}.podium-number,.podium-card.first .podium-number{color:#d2b8ff!important;text-shadow:0 0 25px #a879ff35!important}.podium-name{color:#f7f3ff!important;font-size:clamp(12px,2vw,16px)!important}.podium-meta{color:#b6a9c8!important}.podium-tier{background:#2b1c3d!important;color:#e0caff!important;border:1px solid #67468b!important;border-radius:8px!important}.top-ten-row{display:grid!important;grid-template-columns:42px minmax(0,1fr) auto!important;align-items:center!important;gap:12px!important;padding:15px 17px!important;margin:10px 0!important;border:1px solid #342343!important;border-radius:15px!important;box-shadow:0 6px 18px #0002!important}.top-ten-row:hover{border-color:#745397!important}.top-ten-position{font-size:22px!important}.top-ten-tier{white-space:nowrap!important}
+.tier-rank-boards{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}.tier-rank-board{overflow:hidden!important}.tier-rank-board h3,.tier-rank-head{background:linear-gradient(110deg,#2a1a3d,#181023)!important;color:#d9c2ff!important;border-bottom:1px solid #4b3265!important}.tier-rank-board .ranking-row{padding:12px!important}.form input,.form select,.form textarea,.topbar input,.feature-toolbar input,.feature-toolbar select,.rank-search-wrap input{background:#0d0916!important;color:#f7f3ff!important;border:1px solid #45315b!important;border-radius:11px!important;outline:none!important}.form input:focus,.form select:focus,.form textarea:focus,.rank-search-wrap input:focus{border-color:#b18aff!important;box-shadow:0 0 0 3px #a879ff20!important}.action,.form button,.button{border-radius:11px!important}.action.primary,.form button.primary{background:linear-gradient(135deg,#c7a6ff,#9864e9)!important;color:#180d25!important;border:1px solid #decaff!important;font-weight:850!important;box-shadow:0 8px 22px #a879ff25!important}.action:not(.primary){background:#211531!important;color:#e4d5f8!important;border:1px solid #4b3264!important}
+footer{margin-top:38px!important;padding:24px 12px!important;text-align:center!important;color:#857895!important;border-top:1px solid #2e203e!important;background:#0c0814!important;font-size:11px!important;letter-spacing:1px!important}
+@media(max-width:650px){.pixel-header{padding:24px 14px 18px!important;border-radius:0 0 22px 22px!important}.pixel-header h1{letter-spacing:-1px!important;margin-top:22px!important}.main-nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}.main-nav button{min-width:0!important;font-size:12px!important;padding:11px 7px!important}.main-nav button:last-child{grid-column:1/-1}.section-intro{padding:18px!important;border-radius:17px!important}.tier-rank-boards{grid-template-columns:1fr!important}.top-ten-row{grid-template-columns:32px minmax(0,1fr) auto!important;padding:12px!important}.top-three{gap:7px!important}.podium-card,.podium-card.first{border-radius:14px!important}.top-ten-position{font-size:19px!important}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+</head>
+<body>
+<header class="pixel-header">
+  <div class="pixel-brandline"><span class="pixel-cube">▦</span><span>RIALZYLOS COMMUNITY</span><span class="pixel-version">MCPE 0.15.10 · PROTOCOL 84</span></div>
+  <h1>MCPE 0.15.10 <span>TIER LIST</span></h1>
+  <p class="subtitle">Classic Pocket Edition PvP rankings. Find the top players, rep your country, and get your skill tested.</p>
+  <nav class="main-nav"><button class="active" data-tab="players">▦ Top Players</button><button data-tab="top3">♛ Top 10</button><button data-tab="ranks">✦ Ranks</button><button id="testNav">⚔ Get Tested</button><button id="adminNav" class="admin-nav">Admin</button></nav>
+</header>
+
+<main>
+<section id="players" class="tab">
+  <div class="section-intro"><div class="section-kicker">COMMUNITY RANKINGS / SEASON 01</div><h2>Full Player Ranking <span>(1–50)</span></h2><p>Browse all 50 positions. Unassigned spots stay open until a player is ranked. View the top ten in the separate Top 10 tab.</p></div>
+  <div class="ranking-panel"><div class="ranking-panel-head"><div><span class="section-kicker">OFFICIAL PLAYER BOARD</span><h3>Ranking Players <span class="count-tag">01 — 50</span></h3></div><div class="rank-search-wrap"><input id="search" placeholder="Search a player..." aria-label="Search players"></div></div>
+  <div class="ranking-columns"><span>RANK</span><span>PLAYER</span><span>COUNTRY</span><span>TIER</span></div><div id="tierList" class="ranking-list"></div></div>
+  <p class="board-footnote">Rankings are maintained by the MCPE Tier List team. Custom labels such as HT4 are shown when assigned by an admin.</p>
+</section>
+
+
+
+
+
+
+
+
+<section id="top3" class="tab" style="display:none">
+  <div class="section-intro"><div class="section-kicker">ELITE PLAYERS / SEASON 01</div><h2>Top 10 Players</h2><p>Top three podium followed by positions 4–10 in a compact ranking list. Manage player names, countries, tiers, and custom ranks from Admin.</p></div>
+  <div id="topThree" class="top-three" aria-label="Top three players"></div><div id="topTenList" class="top-ten-list" aria-label="Players ranked four through ten"></div>
+</section>
+
+<section id="ranks" class="tab" style="display:none">
+  <div class="section-intro"><div class="section-kicker">COMPETITIVE DIVISION / SEASON 01</div><h2>Tier Ranks <span>(HT1 — LT5)</span></h2><p>Explore the top five players in every tier. Admin-assigned player rank labels determine each list.</p></div>
+  <div id="tierRankBoards" class="tier-rank-boards"></div>
+</section>
+
+<section id="test" class="tab" style="display:none">
+  <div class="topbar"><div><h2>Test Your Tier</h2><span style="color:var(--muted)">Submit your information for a manual Minecraft PE 0.15.10 PvP tier test and community ranking.</span></div></div>
+  <div class="box" style="max-width:760px;margin:0 auto 14px;border-color:#7a5b16;background:#211b0b"><h3 style="margin-top:0;color:#ffd86b">⚠️ Testing Notice</h3><p style="color:#f0dfad;line-height:1.7;margin-bottom:0"><b>MCPE 0.15.10 mobile players only.</b><br>❌ No Keymapper &nbsp; ❌ No PC &nbsp; ❌ No Windows 10/Windows 8 &nbsp; ❌ No Laptop.<br>Using an unsupported device or control method may result in disqualification.</p></div>
+  <div class="box" style="max-width:760px;margin:auto"><div class="form">
+    <label><b>Minecraft Name *</b></label><input id="testName" placeholder="Your Minecraft username">
+    <label><b>Country *</b></label><input id="testCountry" placeholder="Your country">
+    <label><b>Email *</b></label><input id="testEmail" type="email" autocomplete="email" placeholder="Your email address">
+    <label><b>Main PvP Mode *</b></label><select id="testMode"><option>UHC</option><option>FFA</option><option>Combo</option><option>NoDebuff</option><option>Survival PvP</option><option>Other</option></select>
+    <label><b>PvP Specialty</b></label><select id="testSpecialty"><option>Sword</option><option>Bow</option><option>Combo</option><option>Movement</option><option>Overall</option></select>
+    <label><b>Experience</b></label><select id="testExperience"><option>New Player</option><option>1+ Year</option><option>2+ Years</option><option>3+ Years</option><option>Veteran</option></select>
+    <label><b>Your Minecraft Skin</b> <span style="color:var(--muted);font-weight:normal">(optional)</span></label>
+    <input id="testSkin" type="file" accept="image/png,image/jpeg,image/webp">
+    <small style="color:var(--muted)">Upload your Minecraft skin image (PNG recommended). The full uploaded skin is shown on your player profile; a head thumbnail is used on the leaderboard.</small>
+    <div id="skinPreview" style="display:none;margin-top:8px"></div>
+    <label><b>Discord username <span class="optional-label">(optional)</span></b></label><input id="testDiscord" placeholder="Discord username (optional)">
+    <div class="submission-note"><b>Before you submit</b><p>Only Minecraft PE 0.15.10 mobile gameplay is accepted. No keymapper, PC, Windows 10/8, or laptop. Make sure your Minecraft name and country are correct.</p></div>
+    <button class="action primary" id="testSubmit">Submit Tier Test</button><div id="testMessage" style="color:var(--muted);min-height:20px"></div>
+  </div></div>
+</section>
+<div class="modal" id="contactModal"><div class="box"><button class="close" id="contactClose">×</button><h2>Contact Me</h2><p style="color:var(--muted)">Choose a contact method.</p><div class="form">
+<a class="action primary" style="text-align:center;text-decoration:none" href="https://instagram.com/unruly.ayan" target="_blank" rel="noopener">📸 Instagram — @unruly.ayan</a>
+<a class="action" style="text-align:center;text-decoration:none" href="https://discord.com/users/unruly.ayan" target="_blank" rel="noopener">💬 Discord — @unruly.ayan</a>
+<a class="action" style="text-align:center;text-decoration:none" href="mailto:itzsparow01@gmail.com">📧 Email — itzsparow01@gmail.com</a>
+<div style="font-size:12px;color:var(--muted)">The Discord link is ready to replace with your real profile link when you create the account.</div>
+</div></div></div>
+
+
+
+<section id="admin" class="tab" style="display:none">
+  <div class="topbar">
+    <div>
+      <h2>Admin Panel</h2>
+      <span style="color:var(--muted)">Manage tier-test submissions, player names, countries, tiers, custom rank labels, and ranking data. Changes sync through the existing Firebase setup.</span>
+    </div>
+    <button class="action" id="adminLogout">Log out</button>
+  </div>
+  <div class="box" id="adminNewsBox" style="margin-bottom:18px"><h3>📰 Manage Website News</h3><div class="form"><input id="adminNewsTitle" placeholder="News title"><textarea id="adminNewsBody" placeholder="Write your news or announcement..."></textarea><button class="action primary" id="publishNews">Publish News</button></div><div id="adminNewsList" style="margin-top:14px"></div></div>
+  <div id="adminContent"></div>
+</section>
+
+</main>
+
+
+<div class="modal" id="adminLoginModal"><div class="box">
+<button class="close" id="adminLoginClose">×</button>
+<h2>Admin Login</h2>
+<p style="color:var(--muted)">Enter your Firebase admin email and password to manage tier tests and ranked players.</p>
+<div class="form">
+<input id="adminEmail" type="email" autocomplete="username" placeholder="Admin email" required>
+<input id="adminPassword" type="password" autocomplete="current-password" placeholder="Admin password" required>
+<button class="action primary" id="adminLoginBtn">Login</button>
+<div id="adminLoginMsg" style="color:var(--muted);min-height:20px"></div>
+</div>
+</div></div>
+
+<div class="modal" id="modal"><div class="box">
+<button class="close" id="close">×</button><h2>Add Player</h2>
+<div class="form"><input id="newName" placeholder="Minecraft username"><select id="newTier"><option>S+</option><option>S</option><option>A+</option><option>A</option><option>B+</option><option>B</option><option>C+</option><option>C</option><option>D</option></select><button class="action primary" id="save">Add to Tier List</button></div>
+</div></div>
+
+<div class="modal player-profile-modal" id="playerProfileModal"><div class="box player-profile-box">
+<button class="player-profile-close" id="playerProfileClose" aria-label="Close profile">×</button><div id="playerProfileContent"></div>
+</div></div>
+
+<footer>MCPE 0.15.10 TIER LIST • Built by RialZylos • Classic Pocket Edition PvP</footer>
+<button class="action theme-toggle" id="themeToggle">☀️ Theme</button><div class="toast" id="toast"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCgkOdp3r0m6T7BqrzMF24k72zDeIifacs",
+  authDomain: "mcpetier.firebaseapp.com",
+  projectId: "mcpetier",
+  storageBucket: "mcpetier.firebasestorage.app",
+  messagingSenderId: "356106877096",
+  appId: "1:356106877096:web:a72baa04d25e845dd16a9d",
+  measurementId: "G-QXSL04VRXM"
+};
+firebase.initializeApp(firebaseConfig);
+const firebaseAuth = firebase.auth();
+const firebaseDb = firebase.firestore();
+</script>
+<script>
+const tiers=[
+  ["S+","Elite","Top-level players"],["S","God","Exceptional"],["A+","High Tier","Outstanding"],["A","Excellent","Very strong"],
+  ["B+","Advanced","Strong"],["B","Good","Above average"],["C+","Developing+","Developing"],["C","Average","Casual competitive"],["D","Beginner","Needs improvement"]
+];
+const TIER_ORDER=tiers.map(x=>x[0]);
+let players=[];
+const MAX_PER_TIER=30;
+function tierFull(t){return players.filter(p=>p[1]===t).length>=MAX_PER_TIER;}
+
+function renderPlayers(filter=""){
+ const root=document.getElementById("tierList");if(!root)return;
+ const q=String(filter||document.getElementById("search")?.value||"").trim().toLowerCase();
+ const ranked=players.slice().sort((a,b)=>{
+  const ar=Number((a[3]||{}).overallRank||(a[3]||{}).ranking||0),br=Number((b[3]||{}).overallRank||(b[3]||{}).ranking||0);
+  if(ar&&br)return ar-br;if(ar)return -1;if(br)return 1;
+  const ti=TIER_ORDER.indexOf(a[1]),tj=TIER_ORDER.indexOf(b[1]);if(ti!==tj)return (ti<0?999:ti)-(tj<0?999:tj);
+  return String(a[0]||"").localeCompare(String(b[0]||""));
+ });
+ const slots=Array.from({length:50},(_,i)=>({position:i+1,player:ranked[i]||null})).filter(x=>{if(!q)return true;const p=x.player;if(!p)return false;const pr=p[3]||{};return [p[0],pr.country,p[1],p[4]].join(" ").toLowerCase().includes(q)});
+ root.innerHTML=slots.map(({position,player:p})=>{
+  if(!p)return `<div class="ranking-row"><span class="rank-num">${position}.</span><div class="rank-player"><span class="rank-head rank-initials ranking-empty" aria-hidden="true">?</span><div><span class="rank-player-name ranking-empty">Player not set.</span><span class="rank-player-sub">Awaiting ranking</span></div></div><span class="rank-country">—</span><span class="rank-tier unset">Not ranked</span></div>`;
+  const pr=p[3]||{},country=pr.country||"Country not set",tier=p[4]||p[1]||"Not ranked";
+  const avatar=p[2]?`<span class="rank-head rank-skin" aria-hidden="true" style="background-image:url('${String(p[2]).replace(/'/g,"&#39;")}');background-repeat:no-repeat;background-size:288px 288px;background-position:-36px -36px"></span>`:`<span class="rank-head rank-initials" aria-hidden="true">${escapeHtml(String(p[0]||"?").trim().slice(0,1).toUpperCase())}</span>`;
+  return `<div class="ranking-row player-card-click" tabindex="0" role="button" aria-label="View ${escapeHtml(p[0])} profile" onclick="showPlayerProfile(players.find(x=>x[0]===${JSON.stringify(p[0])}))" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPlayerProfile(players.find(x=>x[0]===${JSON.stringify(p[0])}))}"><span class="rank-num">${position}.</span><div class="rank-player">${avatar}<div style="min-width:0"><span class="rank-player-name">${escapeHtml(p[0])}</span><span class="rank-player-sub">${escapeHtml(p[4]||p[1]||"Rank pending")}</span></div></div><span class="rank-country">${escapeHtml(country)}</span><span class="rank-tier">${escapeHtml(tier)}</span></div>`;
+ }).join("");
+ renderTopThree(ranked);const count=document.getElementById("playerCount");if(count)count.textContent=players.length;
+}
+function renderTopThree(rankedList){
+ const root=document.getElementById("topThree");if(!root)return;
+ const sorted=(rankedList||players.slice().sort((a,b)=>{
+  const ar=Number((a[3]||{}).overallRank||(a[3]||{}).ranking||0),br=Number((b[3]||{}).overallRank||(b[3]||{}).ranking||0);
+  if(ar&&br)return ar-br;if(ar)return -1;if(br)return 1;
+  const ti=TIER_ORDER.indexOf(a[1]),tj=TIER_ORDER.indexOf(b[1]);if(ti!==tj)return (ti<0?999:ti)-(tj<0?999:tj);
+  return String(a[0]||"").localeCompare(String(b[0]||""));
+ })).slice(0,10);
+ const podium=sorted.slice(0,3);
+ root.innerHTML=[0,1,2].map(i=>{const p=podium[i],pr=p?.[3]||{},place=i===0?"1ST PLACE":i===1?"2ND PLACE":"3RD PLACE";
+ return `<article class="podium-card ${i===0?"first":""}"><div class="podium-place">${place}</div><div class="podium-number">#${i+1}</div><div class="podium-name">${p?escapeHtml(p[0]):"Player not set"}</div><div class="podium-meta">${p?escapeHtml(pr.country||"Country not set"):"Waiting for a ranked player"}</div><span class="podium-tier">${p?escapeHtml(p[4]||p[1]||"Tier pending"):"NOT SET"}</span></article>`}).join("");
+ const listRoot=document.getElementById("topTenList");if(!listRoot)return;
+ listRoot.innerHTML=Array.from({length:7},(_,i)=>{const pos=i+4,p=sorted[pos-1],pr=p?.[3]||{};return `<div class="top-ten-row"><span class="top-ten-position">${pos}</span><div class="top-ten-player"><b>${p?escapeHtml(p[0]):"Player not set"}</b><small>${p?escapeHtml(pr.country||"Country not set"):"Awaiting ranking"}</small></div><span class="top-ten-tier">${p?escapeHtml(p[4]||p[1]||"Tier pending"):"—"}</span></div>`}).join("");
+}
+
+function renderSimple(id,data){
+ const root=document.getElementById(id);root.innerHTML="";
+ tiers.forEach(([t])=>{let vals=data.filter(x=>x[0]===t);root.innerHTML+=`<div class="tier" data-tier="${t}"><div class="tier-head"><div class="tier-label">${t}</div><div class="cards">${vals.map(x=>`<div class="card">${x[2]?`<img class="avatar" src="${x[2]}" alt="${escapeHtml(x[0])} skin" style="object-fit:contain;padding:4px">`:`<div class="avatar">${x[1].slice(0,2).toUpperCase()}</div>`}<b>${x[1]}</b><small>${t} Tier</small></div>`).join("")||'<div class="empty">No entries</div>'}</div></div>`});
+}
+function skinHeadHTML(src,name){return `<div class="leader-head" title="${escapeHtml(name)} skin" style="background-image:url('${src}');background-repeat:no-repeat;background-size:288px 288px;background-position:-36px -36px"></div>`;}
+function renderLeaders(){
+ const root=document.getElementById("leaders"); if(!root)return;
+ root.innerHTML=TIER_ORDER.map(t=>{
+   const arr=players.filter(p=>p[1]===t);
+   const remaining=Math.max(0,MAX_PER_TIER-arr.length);
+   return `<div class="leaderboard-tier" data-tier="${t}">
+     <div class="leaderboard-tier-head"><div><div class="leaderboard-tier-title">${t} player ranking</div><small style="color:var(--muted)">Tested ${arr.length} / ${MAX_PER_TIER}</small></div><div class="leaderboard-remain">Remain ${remaining}</div></div>
+     ${arr.length?arr.map((p,i)=>{const pr=p[3]||{},country=pr.country||"Unknown",head=p[2]?skinHeadHTML(p[2],p[0]):`<div class="leader-head" style="display:grid;place-items:center;font-size:12px">${escapeHtml(p[0].slice(0,2).toUpperCase())}</div>`;return `<div class="leader-row" data-player-name="${escapeHtml(p[0])}" title="Tap to view profile • Swipe left/right to see all details"><div class="leader-number">${i+1}.</div>${head}<div><b>${escapeHtml(p[0])}</b><small style="display:block;color:var(--muted);font-size:11px">Tap to view profile</small></div><div class="leader-rank">${escapeHtml(p[4]||"—")}</div><div class="leader-country">${flagFor(country)} ${escapeHtml(country)}</div></div>`}).join(""):`<div class="empty">No tested players in ${t} yet.</div>`}
+   </div>`;
+ }).join("");
+ root.querySelectorAll(".leader-row[data-player-name]").forEach(row=>{row.addEventListener("click",()=>{const p=players.find(x=>x[0]===row.dataset.playerName);if(p)showPlayerProfile(p);});});
+ const total=MAX_PER_TIER*TIER_ORDER.length;
+ document.getElementById("tierSlotCount").textContent=total;
+}
+
+function renderSkinFullBody(canvas,src){const ctx=canvas.getContext("2d"),img=new Image();img.onload=()=>{const w=img.naturalWidth,h=img.naturalHeight;if(w<64||h<32){canvas.style.display="none";return;}const scale=Math.max(1,Math.floor(Math.min(24,canvas.width/24)));canvas.width=24*scale;canvas.height=40*scale;ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,canvas.width,canvas.height);const draw=(sx,sy,sw,sh,dx,dy,dw,dh)=>ctx.drawImage(img,sx,sy,sw,sh,dx*scale,dy*scale,dw*scale,dh*scale);draw(8,8,8,8,8,1,8,8);draw(40,8,8,8,8,1,8,8);draw(20,20,8,12,8,9,8,12);draw(20,36,8,12,8,9,8,12);draw(44,20,4,12,4,9,4,12);draw(44,36,4,12,4,9,4,12);draw(36,52,4,12,16,9,4,12);draw(52,52,4,12,16,9,4,12);draw(4,20,4,12,8,21,4,12);draw(4,36,4,12,8,21,4,12);ctx.fillStyle="rgba(255,255,255,.10)";ctx.fillRect(5*scale,35*scale,14*scale,1*scale);canvas.style.display="block";};img.onerror=()=>canvas.style.display="none";img.src=src;}
+function showPlayerProfile(p){
+ const root=document.getElementById("playerProfileContent");
+ if(!root)return;
+ const pr=p[3]||{},country=pr.country||"Unknown",skin=p[2]||"",tier=p[1]||"Unranked",custom=p[4]||"Not assigned",asia=p[5]?"#"+p[5]:"Not assigned";
+ root.innerHTML=`
+ <div class="player-profile-hero">
+   <div class="player-profile-avatar-wrap">${skin?`<canvas id="profileSkinCanvas" class="skin-body-canvas" width="175" height="245"></canvas>`:`<div style="color:var(--muted);font-weight:800">NO SKIN</div>`}</div>
+   <h2 class="player-profile-name">${escapeHtml(p[0])}</h2>
+   <div class="player-profile-meta">${flagFor(country)} ${escapeHtml(country)} <span style="opacity:.55">•</span> ${escapeHtml(tier)} Tier</div>
+   <div class="player-profile-badges">
+     ${pr.verified?`<span class="profile-pill green">✓ VERIFIED PLAYER</span>`:""}
+     <span class="profile-pill">🏅 ${escapeHtml(custom)}</span>
+     ${p[5]?`<span class="profile-pill gold">🏆 ASIA ${escapeHtml(asia)}</span>`:""}
+   </div>
+ </div>
+ <div class="player-profile-body">
+   <div class="premium-section-title">Player information</div>
+   <div class="premium-grid">
+     <div class="premium-info"><small>Main Tier</small><b>${escapeHtml(tier)}</b></div>
+     <div class="premium-info"><small>Custom Rank</small><b>${escapeHtml(custom)}</b></div>
+     <div class="premium-info"><small>Country</small><b>${flagFor(country)} ${escapeHtml(country)}</b></div>
+     <div class="premium-info"><small>Asia Ranking</small><b>${escapeHtml(asia)}</b></div>
+     <div class="premium-info"><small>PvP Mode</small><b>${escapeHtml(pr.mode||"Not provided")}</b></div>
+     <div class="premium-info"><small>Specialty</small><b>${escapeHtml(pr.specialty||"Not provided")}</b></div>
+     <div class="premium-info"><small>Experience</small><b>${escapeHtml(pr.experience||"Not provided")}</b></div>
+     <div class="premium-info"><small>Email</small><b>${escapeHtml(pr.email||"Not provided")}</b></div>
+     <div class="premium-info"><small>Discord</small><b>${escapeHtml(pr.discord||"Not provided")}</b></div>
+     <div class="premium-info"><small>Instagram</small><b>${escapeHtml(pr.instagram||"Not provided")}</b></div>
+     <div class="premium-info"><small>Telegram</small><b>${escapeHtml(pr.telegram||"Not provided")}</b></div>
+     <div class="premium-info full"><small>Tier History</small><div class="premium-history">${(pr.history||[]).map(h=>`<span>${escapeHtml(h)}</span>`).join("")||"<span>No history</span>"}</div></div>
+   </div>
+   <div class="premium-actions">
+     <button class="action primary" data-profile-name="${encodeURIComponent(String(p[0]))}" onclick="copyPlayerLink(this.dataset.profileName)">🔗 Share Profile</button>
+     <button class="action" data-profile-name="${encodeURIComponent(String(p[0]))}" onclick="requestRetest(this.dataset.profileName)">🔄 Request Retest</button>
+   </div>
+ </div>`;
+ document.getElementById("playerProfileModal").classList.add("show");
+ if(skin)renderSkinFullBody(document.getElementById("profileSkinCanvas"),skin);
+}
+document.getElementById("playerProfileClose").onclick=()=>document.getElementById("playerProfileModal").classList.remove("show");
+document.getElementById("playerProfileModal").addEventListener("click",e=>{if(e.target.id==="playerProfileModal")e.currentTarget.classList.remove("show")});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.getElementById("playerProfileModal")?.classList.remove("show")});
+
+function save(){localStorage.setItem("mcpeTierPlayers",JSON.stringify(players));}
+function changePlayerTier(i,t){if(!adminLoggedIn||!players[i])return;if(t&&players[i][1]!==t&&tierFull(t))return alert(t+" Tier is full! Maximum 30 players are allowed.");players[i][1]=t||"";save();renderPlayers();renderAdmin();}
+function changePlayerRank(i,r){if(!adminLoggedIn||!players[i])return;players[i][4]=(r||"").trim();save();renderPlayers();renderAdmin();}
+function changeAsiaRank(i,v){if(!adminLoggedIn||!players[i])return;const rank=String(v||"").trim();if(rank===""){players[i][5]="";save();renderAsiaRanking();renderAdmin();return;}const n=Number(rank);if(!Number.isInteger(n)||n<1||n>30){alert("Asia Rank must be a number from 1 to 30.");renderAdmin();return;}const other=players.findIndex((p,idx)=>idx!==i&&Number(p[5])===n);if(other!==-1)players[other][5]="";players[i][5]=n;save();renderAsiaRanking();renderAdmin();}
+function saveAnnouncement(){if(!adminLoggedIn)return;const text=(document.getElementById("announcementText")?.value||"").trim();localStorage.setItem("mcpeAnnouncement",text);if(window.firebaseSaveAnnouncement)window.firebaseSaveAnnouncement(text);const a=document.querySelector(".announcement");if(a)a.innerHTML=text?"📢 "+escapeHtml(text):"";alert("Announcement saved.");}
+function copyPlayerLink(encodedName){const name=decodeURIComponent(encodedName||"");const url=location.href.split("#")[0]+"#player="+encodeURIComponent(name);if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(url).then(()=>toast("Profile link copied!")).catch(()=>prompt("Copy this profile link:",url));}else prompt("Copy this profile link:",url);}
+function requestRetest(encodedName){const name=decodeURIComponent(encodedName||"");const subject=encodeURIComponent("MCPE Tier Test Retest Request - "+name);const body=encodeURIComponent("Hello MCPE Tier Test team,\n\nI would like to request a retest for my player profile: "+name+".\n\nThank you.");location.href="mailto:itzsparow01@gmail.com?subject="+subject+"&body="+body;}
+function deletePlayer(i){if(!adminLoggedIn||!players[i])return;const name=players[i][0];if(!confirm("Delete "+name+" from the player list?"))return;players.splice(i,1);save();renderPlayers();renderAdmin();}
+const saved=localStorage.getItem("mcpeTierPlayers");if(saved){try{players=JSON.parse(saved);players=Array.isArray(players)?players:[]}catch(e){players=[];}}
+// Firebase is the source of truth. LocalStorage is only an offline cache.
+renderPlayers();if(localStorage.getItem('mcpeAnnouncement')){const a=document.querySelector('.announcement');if(a)a.innerHTML='📢 '+escapeHtml(localStorage.getItem('mcpeAnnouncement'));}
+
+let tierTests = JSON.parse(localStorage.getItem("mcpeTierTests") || "[]");
+function saveTierTests(){localStorage.setItem("mcpeTierTests",JSON.stringify(tierTests));}
+
+function showTab(tabId){
+  document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));
+  document.querySelectorAll(".tab").forEach(x=>x.style.display="none");
+  const tab=document.getElementById(tabId);
+  if(tab) tab.style.display="block";
+  const navBtn=document.querySelector(`nav button[data-tab="${tabId}"]`);
+  if(navBtn) navBtn.classList.add("active");
+}
+document.getElementById("testNav").onclick=()=>showTab("test");
+document.querySelectorAll('nav button[data-tab]').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+document.getElementById("contactMeBtn").onclick=()=>document.getElementById("contactModal").classList.add("show");
+document.getElementById("contactClose").onclick=()=>document.getElementById("contactModal").classList.remove("show");
+async function sendAutomaticTierTestEmail(d){
+  try{
+    const body=new URLSearchParams();
+    body.append("_subject","New MCPE Tier Test Submission - "+d.name);
+    body.append("_template","table");
+    body.append("_captcha","false");
+    body.append("Minecraft Name",d.name);
+    body.append("Country",d.country);
+    body.append("Applicant Email",d.email);
+    body.append("PvP Mode",d.mode);
+    body.append("Specialty",d.specialty||"Not provided");
+    body.append("Experience",d.experience||"Not provided");
+    body.append("Discord",d.discord||"Not provided");
+    body.append("Instagram",d.instagram||"Not provided");
+    body.append("Telegram",d.telegram||"Not provided");
+    body.append("Submitted At",d.submittedAt);
+    const r=await fetch("https://formsubmit.co/ajax/itzsparow01@gmail.com",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded","Accept":"application/json"},body:body.toString()});
+    return r.ok;
+  }catch(e){ return false; }
+}
+
+function sendApplicantConfirmationEmail(d){
+  try{
+    let iframe=document.getElementById("formsubmitApplicantFrame");
+    if(!iframe){
+      iframe=document.createElement("iframe");
+      iframe.id="formsubmitApplicantFrame";
+      iframe.name="formsubmitApplicantFrame";
+      iframe.style.display="none";
+      document.body.appendChild(iframe);
+    }
+    const form=document.createElement("form");
+    form.method="POST";
+    form.action="https://formsubmit.co/itzsparow01@gmail.com";
+    form.target="formsubmitApplicantFrame";
+    form.style.display="none";
+    const fields={
+      _subject:"MCPE Tier Test Submission Received",
+      _captcha:"true",
+      _template:"table",
+      _replyto:d.email,
+      _autoresponse:"Hi "+d.name+",\n\nYour MCPE Tier Test submission has been received successfully. We will review your application and update your test status on the website.\n\nMinecraft Name: "+d.name+"\nCountry: "+d.country+"\nPvP Mode: "+d.mode+"\n\nThank you for applying to MCPE Tier List.\n\nRialZylos",
+      "Minecraft Name":d.name,
+      "Country":d.country,
+      "email":d.email,
+      "PvP Mode":d.mode,
+      "Specialty":d.specialty||"Not provided",
+      "Experience":d.experience||"Not provided",
+      "Discord":d.discord||"Not provided",
+      "Instagram":d.instagram||"Not provided",
+      "Telegram":d.telegram||"Not provided",
+      "Submitted At":d.submittedAt
+    };
+    Object.keys(fields).forEach(k=>{
+      const input=document.createElement("input");
+      input.type="hidden";
+      input.name=k;
+      input.value=fields[k];
+      form.appendChild(input);
+    });
+    document.body.appendChild(form);
+    form.submit();
+    setTimeout(()=>form.remove(),3000);
+    return true;
+  }catch(e){ return false; }
+}
+
+document.getElementById("testSubmit").onclick=async()=>{
+ const submitButton=document.getElementById("testSubmit");
+ if(submitButton.disabled)return;
+ const name=document.getElementById("testName").value.trim(), country=document.getElementById("testCountry").value.trim(), email=document.getElementById("testEmail").value.trim(), msg=document.getElementById("testMessage");
+ if(!name||!country||!email){msg.textContent="Email is required. Please fill in Minecraft Name, Country and Email.";return;}
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){msg.textContent="Please enter a valid email address.";return;}
+ if(tierTests.some(x=>x.name.toLowerCase()===name.toLowerCase()&&x.status==="Pending")){msg.textContent="You already have a pending tier test.";return;}
+
+ const submitTest=async(skin)=>{
+  submitButton.disabled=true;
+  const mode=document.getElementById("testMode").value,specialty=document.getElementById("testSpecialty").value,experience=document.getElementById("testExperience").value,discord=document.getElementById("testDiscord").value.trim(),instagram="",telegram="";
+  const submittedAt=new Date().toISOString();
+  const application={name,country,email,mode,specialty,experience,discord,instagram,telegram,skin:skin||"",status:"Pending",submittedAt,notifications:[{title:"Tier Test Submitted",message:"Your tier testing application has been successfully registered and is currently pending review. Our team will review your information and determine your appropriate tier. Please keep your contact information available in case we need to reach you.",status:"Pending",createdAt:submittedAt,unread:true,profileUrl:""}]};
+  try {
+    if(!window.firebaseSubmitTierTest) throw new Error("Firebase submission is not ready. Please refresh and try again.");
+    const newId = await window.firebaseSubmitTierTest(application);
+    application.id=newId;
+    tierTests.push(application);
+    localStorage.setItem("mcpeTierTests",JSON.stringify(tierTests));
+    msg.textContent="Tier test submitted successfully! Your application has been saved for admin review.";
+    ["testName","testCountry","testEmail","testDiscord","testInstagram","testTelegram"].forEach(id=>{const el=document.getElementById(id);if(el)el.value="";});
+  } catch(saveError) {
+    console.error("Tier test save failed:",saveError);
+    msg.textContent="Submission failed: "+(saveError.code||saveError.message||"Please check your connection and try again.");
+  } finally {
+    submitButton.disabled=false;
+  }
+
+ };
+ await submitTest("");
+};
+
+document.getElementById("search").oninput=e=>renderPlayers(e.target.value);
+document.querySelectorAll("nav button[data-tab]").forEach(btn=>btn.onclick=()=>showTab(btn.dataset.tab));
+
+
+// Firebase Authentication replaces the old client-side admin password.
+var adminLoggedIn = sessionStorage.getItem("mcpeAdminLoggedIn")==="1"; window.adminLoggedIn = adminLoggedIn;
+let firebaseUser = null;
+let firebaseAdminReady = false;
+function firebaseAdminUid(){ return firebaseUser ? firebaseUser.uid : ""; }
+function firebaseSetStatus(text){ const el=document.getElementById("adminLoginMsg"); if(el) el.textContent=text||""; }
+firebaseAuth.onAuthStateChanged(async user=>{
+  firebaseUser=user||null;
+  firebaseAdminReady=false;
+  if(user){
+    try{
+      const snap=await firebaseDb.collection("admins").doc(user.uid).get();
+      firebaseAdminReady=snap.exists && snap.data().enabled!==false;
+    }catch(e){ firebaseAdminReady=false; console.warn("Firebase admin check failed",e); }
+    adminLoggedIn=firebaseAdminReady; window.adminLoggedIn=adminLoggedIn;
+    if(adminLoggedIn) sessionStorage.setItem("mcpeAdminLoggedIn","1"); else sessionStorage.removeItem("mcpeAdminLoggedIn");
+    if(adminLoggedIn){
+      try{ await window.firebaseLoadTierTests?.(); }catch(loadError){ console.warn("Could not load tier-test submissions",loadError); }
+    }
+    if(document.getElementById("adminContent")) renderAdmin();
+  }else{
+    adminLoggedIn=false; window.adminLoggedIn=false; sessionStorage.removeItem("mcpeAdminLoggedIn");
+  }
+});
+
+function renderAdmin(){
+  const root=document.getElementById("adminContent");
+  if(!adminLoggedIn){root.innerHTML='<div class="box"><h3>Admin login required</h3><p style="color:var(--muted)">Log in to view tier-test submissions and ranked players.</p></div>';return;}
+  root.innerHTML=`
+    <div class="box" style="margin-bottom:18px"><h3>🛡️ Admin Controls</h3><div class="form"><label>Admin Role</label><select id="adminRole"><option>Owner</option><option>Admin</option><option>Tester</option><option>Moderator</option></select><input id="announcementText" placeholder="Site announcement"><button class="action primary" onclick="saveAnnouncement()">Save Announcement</button></div></div>
+    <div class="box" style="margin-bottom:18px"><h3>Admin: Add Player</h3><div class="form"><input id="adminPlayerName" placeholder="Minecraft username"><input id="adminPlayerRank" placeholder="Custom rank (e.g. HT1, HT2)"><select id="adminPlayerTier">${TIER_ORDER.map(t=>`<option>${t}</option>`).join("")}</select><button class="action primary" onclick="adminAddPlayer()">Add Player</button></div></div>
+    <div class="box" style="margin-bottom:18px"><h3>Tier Test Submissions (${tierTests.length})</h3>${tierTests.length?tierTests.map((x,i)=>`<div class="admin-card"><h3 style="margin:0">${escapeHtml(x.name)} <span style="color:#ffd86b">• ${escapeHtml(x.status)}</span></h3><div class="admin-card-grid" style="margin-top:12px"><div><b>Country:</b> ${escapeHtml(x.country)}</div><div><b>Email:</b> <a href="mailto:${escapeHtml(x.email)}">${escapeHtml(x.email)}</a></div><div><b>Discord:</b> ${escapeHtml(x.discord||"Not provided")}</div><div><b>Instagram:</b> ${escapeHtml(x.instagram||"Not provided")}</div><div><b>Telegram:</b> ${escapeHtml(x.telegram||"Not provided")}</div><div><b>Mode:</b> ${escapeHtml(x.mode)}</div><div><b>Specialty:</b> ${escapeHtml(x.specialty)}</div><div><b>Experience:</b> ${escapeHtml(x.experience)}</div><div><b>Skin:</b> ${x.skin?`<a href="${x.skin}" target="_blank" rel="noopener">View uploaded skin</a>`:"Not provided"}</div></div>${String(x.status||"").trim().toLowerCase()==="pending"?`<div class="submission-actions" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid var(--border)"><input id="testRank${i}" placeholder="Custom rank (e.g. HT1, HT2)"><input id="testAsia${i}" type="number" min="1" max="30" placeholder="Asia rank 1–30"><select id="testTier${i}">${TIER_ORDER.map(t=>`<option>${t}</option>`).join("")}</select><button type="button" class="action primary approve-btn" onclick="approveTest(${i})">✅ Approve</button><button type="button" class="action danger" onclick="window.rejectTest(${i})">❌ Reject</button></div>`:String(x.status||"").toLowerCase().startsWith("approved")?(()=>{const pp=players.find(q=>q[0].toLowerCase()===x.name.toLowerCase());return pp?`<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px"><b>Asia Rank:</b><input type="number" min="1" max="30" value="${pp[5]||""}" placeholder="1-30" onchange="changeAsiaRank(${players.indexOf(pp)},this.value)"><span style="color:var(--muted);font-size:12px">Leave blank to remove.</span></div>`:""})():""}</div>`).join(""):'<p style="color:var(--muted)">No tier test submissions yet.</p>'}</div>
+    <div class="stats"><div class="stat"><b>${players.length}</b><span>TESTED PLAYERS</span></div><div class="stat"><b>${TIER_ORDER.reduce((n,t)=>n+players.filter(p=>p[1]===t).length,0)}</b><span>RANKED PLAYERS</span></div><div class="stat"><b>${TIER_ORDER.reduce((n,t)=>n+Math.max(0,MAX_PER_TIER-players.filter(p=>p[1]===t).length),0)}</b><span>SLOTS REMAINING</span></div></div>
+    <div class="box"><h3>Current Ranked Players</h3><div style="overflow-x:auto"><table class="admin-table"><thead><tr><th>Name</th><th>Country</th><th>Tier</th><th>Custom Rank</th><th>Asia Rank</th><th>Action</th></tr></thead><tbody>${players.map((p,i)=>{const pr=p[3]||{};return `<tr><td><b>${escapeHtml(p[0])}</b></td><td>${flagFor(pr.country)} ${escapeHtml(pr.country||"Unknown")}</td><td><select onchange="changePlayerTier(${i},this.value)"><option value="" ${!p[1]?"selected":""}>Unranked</option>${TIER_ORDER.map(t=>`<option ${p[1]===t?"selected":""}>${t}</option>`).join("")}</select></td><td><input value="${escapeHtml(p[4]||"")} placeholder="HT1" onchange="changePlayerRank(${i},this.value)" style="min-width:90px"></td><td><input type="number" min="1" max="30" value="${p[5]||""}" placeholder="1-30" onchange="changeAsiaRank(${i},this.value)" style="width:90px"></td><td><button class="action danger" onclick="deletePlayer(${i})">Delete</button></td></tr>`}).join("")}</tbody></table></div></div>`;
+  const a=document.getElementById("announcementText");if(a)a.value=localStorage.getItem("mcpeAnnouncement")||"";
+}
+
+function adminAddPlayer(){if(!adminLoggedIn)return;const n=document.getElementById("adminPlayerName").value.trim(),r=document.getElementById("adminPlayerRank").value.trim(),t=document.getElementById("adminPlayerTier").value;if(!n)return alert("Enter a Minecraft username.");if(players.some(p=>p[0].toLowerCase()===n.toLowerCase()))return alert("Player already exists.");if(tierFull(t))return alert(t+" Tier is full! Maximum 30 players are allowed.");players.push([n,t,"",{},r]);save();renderPlayers();document.getElementById("adminPlayerName").value="";document.getElementById("adminPlayerRank").value="";renderAdmin();}
+window.approveTest=async function(i){
+  const x=tierTests[i];
+  if(!x) return alert("Submission not found. Refresh the admin panel and try again.");
+  const tierEl=document.getElementById("testTier"+i);
+  const rankEl=document.getElementById("testRank"+i);
+  const asiaEl=document.getElementById("testAsia"+i);
+  if(!tierEl || !rankEl) return alert("Approval form is missing. Refresh the admin panel and try again.");
+  const t=tierEl.value;
+  const r=rankEl.value.trim();
+  const ar=(asiaEl?.value||"").trim();
+  if(ar && (Number(ar)<1 || Number(ar)>30 || !Number.isInteger(Number(ar)))) return alert("Asia rank must be a whole number from 1 to 30.");
+  if(typeof window.firebaseSavePlayer!=="function" || typeof window.saveTierTests!=="function") return alert("Firebase save service is unavailable. Refresh the page and log in again.");
+  // Require the real Firebase admin state; a stale browser session alone is not enough.
+  if(typeof firebaseAdminReady==="undefined" || !firebaseAdminReady || typeof firebaseUser==="undefined" || !firebaseUser || !adminLoggedIn){
+    return alert("Your Firebase admin session is not ready. Log out, log in again, then retry approval.");
+  }
+  if(tierFull(t)) return alert(t+" Tier is full! Maximum 30 players are allowed.");
+  if(players.some(p=>String(p[0]||"").toLowerCase()===String(x.name||"").toLowerCase())) return alert("That player already exists on the tier list.");
+  const oldPlayers=JSON.parse(JSON.stringify(players));
+  const oldTests=JSON.parse(JSON.stringify(tierTests));
+  const profile={country:x.country,email:x.email,mode:x.mode,specialty:x.specialty,experience:x.experience,discord:x.discord,instagram:x.instagram,telegram:x.telegram,verified:true,history:[t+(r?' • '+r:'')]};
+  const newPlayer=[x.name,t,x.skin||"",profile,r,ar?Number(ar):""];
+  try{
+    if(ar){const other=players.findIndex(q=>Number(q[5])===Number(ar));if(other>=0)players[other][5]="";}
+    players.push(newPlayer);
+    x.status="Approved - "+t+" Tier";
+    x.asiaRank=ar?Number(ar):"";
+    x.assignedRank=r;
+    x.approvedAt=new Date().toISOString();
+    x.notifications=Array.isArray(x.notifications)?x.notifications:[];
+    x.notifications.push({title:"Tier Test Approved!",message:"Congratulations! Your tier test has been reviewed and approved. Your profile is now live on MCPE Tier List.",status:"Approved",tier:t,rank:r,createdAt:new Date().toISOString(),unread:true,profileUrl:location.href.split("#")[0]+"#player="+encodeURIComponent(x.name)});
+    // Save the approved submission first, then save the player to Firebase.
+    const testsSaved=await window.saveTierTests();
+    if(testsSaved!==true) throw new Error("Firebase refused to save the updated test list. Please log in again and check Firestore rules.");
+    const playerSaved=await window.firebaseSavePlayer(newPlayer);
+    if(playerSaved!==true) throw new Error("Firebase did not confirm saving the player.");
+    localStorage.setItem("mcpeTierPlayers",JSON.stringify(players));
+    localStorage.setItem("mcpeTierTests",JSON.stringify(tierTests));
+    renderPlayers(); renderAsiaRanking(); renderAdmin();
+    alert("Player approved and saved to Firebase successfully.");
+  }catch(e){
+    console.error("Firebase approval save failed:",e);
+    players=oldPlayers;
+    tierTests=oldTests;
+    localStorage.setItem("mcpeTierPlayers",JSON.stringify(players));
+    localStorage.setItem("mcpeTierTests",JSON.stringify(tierTests));
+    renderPlayers(); renderAsiaRanking(); renderAdmin();
+    alert("Approval failed; local changes were rolled back.\n\n"+(e&&e.code?e.code+"\n":"")+(e&&e.message?e.message:"Unknown Firebase error")+"\n\nCheck Firebase login and Firestore Rules, then try again.");
+  }
+};
+window.rejectTest=function(i){
+  if(!adminLoggedIn){alert("Admin login required.");return;}
+  i=Number(i);
+  if(!Number.isInteger(i)||i<0||i>=tierTests.length){alert("Submission not found.");return;}
+  const x=tierTests[i];
+  if(!x){alert("Submission not found.");return;}
+  const status=String(x.status||"").trim().toLowerCase();
+  if(status!=="pending"){alert("This submission has already been processed.");renderAdmin();return;}
+  x.status="Rejected";
+  x.rejectedAt=new Date().toISOString();
+  x.notifications=Array.isArray(x.notifications)?x.notifications:[];
+  x.notifications.push({title:"Tier Test Update",message:"Unfortunately, your current tier test application was not approved. You may improve your PvP skills and request another test later.",status:"Rejected",createdAt:new Date().toISOString(),unread:true,profileUrl:""});
+  saveTierTests();
+  renderAdmin();
+  alert("Tier test request rejected successfully.");
+};
+
+function loadWebsiteNews(){
+ const news=JSON.parse(localStorage.getItem("mcpeWebsiteNews")||"[]");
+ const card=n=>`<div class="admin-card"><h3 style="margin:0 0 6px">${escapeHtml(n.title)}</h3><small style="color:var(--muted)">${new Date(n.date).toLocaleString()}</small><p style="white-space:pre-wrap;line-height:1.7">${escapeHtml(n.body)}</p>${adminLoggedIn?`<button class="action danger" onclick="deleteWebsiteNews(${n.id})">Delete</button>`:""}</div>`;
+ const pub=document.getElementById("publicNewsList"); if(pub)pub.innerHTML=news.length?news.map(card).join(""):"<div class='box'><p style='color:var(--muted)'>No news published yet.</p></div>";
+ const adm=document.getElementById("adminNewsList"); if(adm)adm.innerHTML=news.length?news.map(card).join(""):"<p style='color:var(--muted)'>No published news.</p>";
+}
+window.deleteWebsiteNews=function(id){if(!adminLoggedIn)return;let n=JSON.parse(localStorage.getItem("mcpeWebsiteNews")||"[]");n=n.filter(x=>x.id!==id);localStorage.setItem("mcpeWebsiteNews",JSON.stringify(n));loadWebsiteNews();};
+document.getElementById("publishNews")?.addEventListener("click",()=>{if(!adminLoggedIn)return alert("Admin login required.");const title=document.getElementById("adminNewsTitle").value.trim(),body=document.getElementById("adminNewsBody").value.trim();if(!title||!body)return alert("Enter a news title and message.");const n=JSON.parse(localStorage.getItem("mcpeWebsiteNews")||"[]");n.unshift({id:Date.now(),title,body,date:new Date().toISOString()});localStorage.setItem("mcpeWebsiteNews",JSON.stringify(n));document.getElementById("adminNewsTitle").value="";document.getElementById("adminNewsBody").value="";loadWebsiteNews();alert("News published successfully.");});
+function renderAsiaRanking(){
+ const root=document.getElementById("asiaRankingList");
+ if(!root)return;
+ let assigned=0,html="";
+ for(let n=1;n<=30;n++){
+   const p=players.find(x=>Number(x[5])===n);
+   if(p){
+     assigned++;
+     const pr=p[3]||{},country=pr.country||"Unknown";
+     const head=p[2]?`<img class="asia-head" src="${p[2]}" alt="${escapeHtml(p[0])} skin">`:`<div class="asia-head asia-head-fallback">${escapeHtml(p[0].slice(0,2).toUpperCase())}</div>`;
+     // Format: 6. [skin head] PlayerName Rank Country
+     html+=`<div class="asia-row" role="button" tabindex="0" aria-label="View ${escapeHtml(p[0])} profile"><div class="asia-number">${n}.</div>${head}<div class="asia-player-name"><b>${escapeHtml(p[0])}</b></div><div class="leader-rank">${escapeHtml(p[4]||"Not assigned")}</div><div class="leader-country">${flagFor(country)} ${escapeHtml(country)}</div></div>`;
+   }else{
+     html+=`<div class="asia-row asia-unassigned"><div class="asia-number">${n}.</div><div style="grid-column:2/6"><span class="asia-empty-name">Unknown. player not set!</span></div></div>`;
+   }
+ }
+ root.innerHTML=html;
+ root.querySelectorAll('.asia-row').forEach((row,idx)=>{const p=players.find(x=>Number(x[5])===idx+1);if(p){row.style.cursor='pointer';row.onclick=()=>showPlayerProfile(p);row.onkeydown=e=>{if(e.key==='Enter'||e.key===' ')showPlayerProfile(p);};}});
+ const rem=document.getElementById("asiaRemain");
+ if(rem)rem.textContent=(30-assigned)+" Remain";
+}
+renderAsiaRanking();
+function profileUrl(name){return location.href.split("#")[0]+"#player="+encodeURIComponent(name)}
+function renderDashboard(){const email=(document.getElementById("dashboardEmail")?.value||"").trim().toLowerCase(),root=document.getElementById("dashboardResult");if(!root)return;const tests=tierTests.filter(t=>(t.email||"").toLowerCase()===email);if(!email){root.innerHTML="<p style='color:var(--muted)'>Enter the email used for your tier test.</p>";return}if(!tests.length){root.innerHTML="<p style='color:var(--muted)'>No tier test was found for this email.</p>";return}const t=tests[tests.length-1],p=players.find(x=>x[0].toLowerCase()===t.name.toLowerCase());root.innerHTML=`<div class="admin-card"><h3>${escapeHtml(t.name)}</h3><p><b>Tier:</b> ${escapeHtml(p?.[1]||"Pending")}</p><p><b>Rank:</b> ${escapeHtml(p?.[4]||"Not assigned")}</p><p><b>Test Status:</b> ${escapeHtml(t.status)}</p><p><b>History:</b> ${escapeHtml((p?.[3]?.history||[]).join(" → ")||"No tier history yet")}</p>${p?`<a class="action primary" style="display:inline-block;text-decoration:none" href="${profileUrl(p[0])}">👤 View My Profile</a>`:""}</div>`}
+function renderNotifications(){const email=(document.getElementById("notificationEmail")?.value||"").trim().toLowerCase(),root=document.getElementById("notificationResult");if(!root)return;const tests=tierTests.filter(t=>(t.email||"").toLowerCase()===email),notes=[];tests.forEach(t=>(t.notifications||[]).forEach(n=>notes.push({...n,name:t.name})));notes.sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));if(!email){root.innerHTML="<p style='color:var(--muted)'>Enter your email used for your tier test.</p>";return}root.innerHTML=notes.length?notes.map(n=>`<div class="admin-card"><h3>${escapeHtml(n.title)} <span style="color:${n.status==="Approved"?"#7bea8a":n.status==="Rejected"?"#ff7777":"#ffd86b"}">• ${escapeHtml(n.status||"Info")}</span></h3><p style="line-height:1.7">${escapeHtml(n.message)}</p>${n.tier?`<p><b>Tier:</b> ${escapeHtml(n.tier)} &nbsp; <b>Rank:</b> ${escapeHtml(n.rank||"Not assigned")}</p>`:""}<small style="color:var(--muted)">${new Date(n.createdAt).toLocaleString()}</small>${n.profileUrl?`<br><a class="action primary" style="display:inline-block;text-decoration:none;margin-top:10px" href="${n.profileUrl}">👤 View My Profile</a>`:""}</div>`).join(""):"<div class='box'><p style='color:var(--muted)'>No notifications found for this email.</p></div>";tests.forEach(t=>(t.notifications||[]).forEach(n=>n.unread=false));saveTierTests();}
+document.getElementById("dashboardCheck")?.addEventListener("click",renderDashboard);document.getElementById("notificationCheck")?.addEventListener("click",renderNotifications);loadWebsiteNews();
+function escapeHtml(v){return String(v).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
+window.changePlayerRank=function(i,r){if(!adminLoggedIn||!players[i])return;players[i][4]=(r||"").trim();save();renderPlayers();renderAdmin();};
+window.changeAsiaRank=function(i,v){if(!adminLoggedIn||!players[i])return;const value=String(v||"").trim();if(value===""){players[i][5]="";save();renderPlayers();renderAdmin();renderAsiaRanking();return;}const n=Number(value);if(!Number.isInteger(n)||n<1||n>30){alert("Asia rank must be between 1 and 30.");renderAdmin();return;}const other=players.findIndex((p,idx)=>idx!==i&&Number(p[5])===n);if(other>=0)players[other][5]="";players[i][5]=n;save();renderPlayers();renderAdmin();renderAsiaRanking();};
+window.changePlayerTier=function(i,t){if(!adminLoggedIn||!players[i])return;if(t!==""&&!TIER_ORDER.includes(t))return;if(t&&players[i][1]!==t&&tierFull(t))return alert(t+" Tier is full! Maximum 30 players are allowed.");players[i][1]=t;save();renderPlayers();renderAdmin();};
+window.deletePlayer=function(i){if(!adminLoggedIn||!players[i])return;if(confirm("Delete this ranked player?")){players.splice(i,1);save();renderPlayers();renderAdmin();}};
+
+function flagFor(country){const map={Bangladesh:'🇧🇩',India:'🇮🇳',Pakistan:'🇵🇰',Nepal:'🇳🇵',USA:'🇺🇸',Canada:'🇨🇦',UK:'🇬🇧',Indonesia:'🇮🇩',Malaysia:'🇲🇾',Philippines:'🇵🇭',Japan:'🇯🇵',SouthKorea:'🇰🇷',Australia:'🇦🇺'};return map[country]||'🌍';}
+function toast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2200)}
+window.copyPlayerLink=function(n){const name=decodeURIComponent(n);const url=location.href.split('#')[0]+'#player='+encodeURIComponent(name);if(navigator.clipboard)navigator.clipboard.writeText(url);toast('Profile link copied!')};
+window.requestRetest=function(n){const name=decodeURIComponent(n);const existing=tierTests.find(x=>x.name.toLowerCase()===name.toLowerCase()&&x.status==='Retest Requested');if(existing){toast('Retest already requested.');return}tierTests.push({name,status:'Retest Requested',submittedAt:new Date().toISOString()});saveTierTests();toast('Retest request sent!')};
+window.saveAnnouncement=function(){if(!adminLoggedIn)return;localStorage.setItem('mcpeAnnouncement',document.getElementById('announcementText').value.trim());if(window.firebaseSaveAnnouncement)window.firebaseSaveAnnouncement(document.getElementById('announcementText').value.trim());toast('Announcement saved!')};
+function renderModeBoards(){const root=document.getElementById('modeBoards');if(!root)return;const modes=['UHC','FFA','Combo','NoDebuff','Survival PvP','Other'];root.innerHTML=modes.map(m=>{const arr=players.filter(p=>(p[3]||{}).mode===m).sort((a,b)=>TIER_ORDER.indexOf(a[1])-TIER_ORDER.indexOf(b[1])).slice(0,5);return `<div class="mode-card"><b>${m}</b><div style="margin-top:8px">${arr.length?arr.map((p,i)=>`${i+1}. ${escapeHtml(p[0])} <span class="rank-badge">${escapeHtml(p[4]||p[1])}</span>`).join('<br>'):'<span style="color:var(--muted)">No ranked players</span>'}</div></div>`}).join('')}
+function populateCountryFilter(){const sel=document.getElementById('countryFilter');if(!sel)return;const countries=[...new Set(players.map(p=>(p[3]||{}).country).filter(Boolean))].sort();sel.innerHTML='<option value="">🌍 All Countries</option>'+countries.map(c=>`<option>${escapeHtml(c)}</option>`).join('')}
+function enhancedPlayerFilter(){const q=(document.getElementById('proSearch')?.value||'').toLowerCase(),country=document.getElementById('countryFilter')?.value||'',mode=document.getElementById('modeFilter')?.value||'';const root=document.getElementById('tierList');root.querySelectorAll('.card').forEach(c=>{const p=players.find(x=>x[0]===c.dataset.name),pr=p?.[3]||{},ok=(!q||[p?.[0],pr.country,p?.[4],p?.[1]].join(' ').toLowerCase().includes(q))&&(!country||pr.country===country)&&(!mode||pr.mode===mode);c.style.display=ok?'':'none';});}
+
+document.getElementById('proSearch')?.addEventListener('input',enhancedPlayerFilter);document.getElementById('countryFilter')?.addEventListener('change',enhancedPlayerFilter);document.getElementById('modeFilter')?.addEventListener('change',enhancedPlayerFilter);
+document.getElementById('themeToggle')?.addEventListener('click',()=>{document.body.classList.toggle('light-mode');localStorage.setItem('mcpeTheme',document.body.classList.contains('light-mode')?'light':'dark')});
+if(localStorage.getItem('mcpeTheme')==='light')document.body.classList.add('light-mode');
+const oldRenderPlayers=renderPlayers;renderPlayers=function(filter=''){oldRenderPlayers(filter);populateCountryFilter();renderModeBoards();renderAsiaRanking();setTimeout(enhancedPlayerFilter,0)};
+const oldRenderAdmin=renderAdmin;renderAdmin=function(){oldRenderAdmin();const a=document.getElementById('announcementText');if(a)a.value=localStorage.getItem('mcpeAnnouncement')||''};
+// Restore shared profile from URL hash
+function openHashProfile(){const h=location.hash;if(h.startsWith("#player=")){const n=decodeURIComponent(h.slice(8));const p=players.find(x=>x[0].toLowerCase()===n.toLowerCase());if(p){showPlayerProfile(p);return;}toast("Player profile not found.");}}
+window.addEventListener('hashchange',openHashProfile);setTimeout(openHashProfile,300);
+
+document.getElementById("adminNav").onclick=(event)=>{
+  if(event) event.preventDefault();
+  if(!adminLoggedIn){
+    const loginModal=document.getElementById("adminLoginModal");
+    if(loginModal) loginModal.classList.add("show");
+    else alert("Admin login panel could not be found. Please refresh the page.");
+  } else {showTab("admin");renderAdmin();}
+};
+document.getElementById("adminLoginBtn").onclick=async()=>{
+  const email=(document.getElementById("adminEmail")?.value||"").trim();
+  const pw=document.getElementById("adminPassword").value;
+  const msg=document.getElementById("adminLoginMsg");
+  if(!email || !pw){msg.textContent="Enter your admin email and password.";return;}
+  msg.textContent="Signing in with Firebase…";
+  try{
+    await firebaseAuth.signInWithEmailAndPassword(email,pw);
+    const user=firebaseAuth.currentUser;
+    const snap=await firebaseDb.collection("admins").doc(user.uid).get();
+    if(!snap.exists || snap.data().enabled===false){
+      await firebaseAuth.signOut();
+      msg.textContent="This Firebase account is not authorized as an admin yet.";
+      alert("Admin setup is almost complete. In Firestore, create admins/"+user.uid+" with enabled: true, then log in again.");
+      return;
+    }
+    adminLoggedIn=true;window.adminLoggedIn=true;sessionStorage.setItem("mcpeAdminLoggedIn","1");
+    document.getElementById("adminLoginModal").classList.remove("show");
+    document.getElementById("adminPassword").value="";
+    msg.textContent=""; showTab("admin"); renderAdmin(); await window.firebaseLoadTierTests?.();
+  }catch(e){ msg.textContent=e.message||"Firebase sign-in failed."; }
+};
+document.getElementById("adminLoginClose").onclick=()=>document.getElementById("adminLoginModal").classList.remove("show");
+document.getElementById("adminLogout").onclick=async()=>{
+  try{await firebaseAuth.signOut();}catch(e){}
+  adminLoggedIn=false;sessionStorage.removeItem("mcpeAdminLoggedIn");showTab("players");
+};
+
+
+
+/* ===== Firebase production sync layer ===== */
+(function(){
+  const F={players:"players", tests:"tierTests", news:"news", announcements:"announcements"};
+  let firstCloudPlayers=true, firstCloudTests=true;
+  function safeDocId(name){ return String(name||"").toLowerCase().replace(/[^a-z0-9_-]/g,"_").slice(0,120)||("player_"+Date.now()); }
+  function testDocId(x,i){ return String(x.id||((x.name||"test")+"_"+(x.submittedAt||i))).replace(/[^a-zA-Z0-9_-]/g,"_").slice(0,120); }
+  async function writePlayers(){
+    const col=firebaseDb.collection(F.players);
+    const batch=firebaseDb.batch();
+    players.forEach(p=>{
+      if(!p || !p[0]) return;
+      const id=safeDocId(p[0]);
+      batch.set(col.doc(id),{name:String(p[0]||""),tier:String(p[1]||""),skin:String(p[2]||""),profile:(p[3]&&typeof p[3]==="object")?p[3]:{},customRank:String(p[4]||""),asiaRank:p[5]||"",updatedAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true});
+    });
+    await batch.commit();
+    return true;
+  }
+  async function loadPlayers(){
+    try{
+      const snap=await firebaseDb.collection(F.players).get();
+      const cloudPlayers=snap.docs.map(d=>{
+        const x=d.data()||{};
+        let tier=String(x.tier||"").trim();
+        tier=tier.replace(/\s+Tier$/i,"").trim();
+        const matched=TIER_ORDER.find(t=>String(t).toLowerCase()===tier.toLowerCase());
+        if(matched) tier=matched;
+        return [String(x.name||d.id),tier,String(x.skin||""),(x.profile&&typeof x.profile==="object")?x.profile:{},String(x.customRank||""),x.asiaRank||""];
+      });
+      const localCount=Array.isArray(players)?players.length:0;
+      // Never let an empty/late cloud read erase a valid local player list.
+      // If Firestore really is empty, re-upload the local list instead.
+      if(cloudPlayers.length>0 || localCount===0){
+        players=cloudPlayers;
+        localStorage.setItem("mcpeTierPlayers",JSON.stringify(players));
+      }else{
+        console.warn("Firestore returned 0 players; preserving local players and repairing cloud data.");
+        await writePlayers();
+      }
+      renderPlayers();renderAsiaRanking();renderAdmin();
+    }catch(e){
+      console.error("Firebase player load failed; using local cache",e);
+      const saved=localStorage.getItem("mcpeTierPlayers");
+      if(saved){try{const cached=JSON.parse(saved);if(Array.isArray(cached))players=cached;}catch(ignore){}}
+      renderPlayers();renderAsiaRanking();renderAdmin();
+    }
+  }
+  async function writeTests(){
+    if(!adminLoggedIn || !firebaseAdminReady || !firebaseUser) throw new Error("Admin login required to update tier-test records.");
+    const col=firebaseDb.collection(F.tests), snap=await col.get(), wanted={}; const batch=firebaseDb.batch();
+    tierTests.forEach((x,i)=>{const id=testDocId(x,i);x.id=id;wanted[id]=true;batch.set(col.doc(id),x,{merge:true});});
+    snap.docs.forEach(d=>{if(!wanted[d.id])batch.delete(d.ref);});
+    await batch.commit();
+    return true;
+  }
+  async function loadTests(){
+    if(!adminLoggedIn || !firebaseAdminReady || !firebaseUser) return false;
+    try{
+      const snap=await firebaseDb.collection(F.tests).get();
+      tierTests=snap.docs.map(d=>({id:d.id,...d.data()}));localStorage.setItem("mcpeTierTests",JSON.stringify(tierTests));renderAdmin();
+      return true;
+    }catch(e){console.warn("Firebase tier-test load failed:",e.code||"",e.message||e);return false;}
+  }
+  window.firebaseSubmitTierTest=async function(application){
+    if(!application || !String(application.name||"").trim()) throw new Error("Minecraft name is required.");
+    const safeApplication={
+      name:String(application.name).trim().slice(0,40),
+      country:String(application.country||"").trim().slice(0,60),
+      email:String(application.email||"").trim().slice(0,254),
+      mode:String(application.mode||"").slice(0,50),
+      specialty:String(application.specialty||"").slice(0,100),
+      experience:String(application.experience||"").slice(0,100),
+      discord:String(application.discord||"").trim().slice(0,100),
+      instagram:String(application.instagram||"").trim().slice(0,100),
+      telegram:String(application.telegram||"").trim().slice(0,100),
+      skin:String(application.skin||"").slice(0,500000),
+      status:"Pending",
+      submittedAt:String(application.submittedAt||new Date().toISOString()),
+      notifications:Array.isArray(application.notifications)?application.notifications.slice(0,5):[]
+    };
+    const ref=await firebaseDb.collection(F.tests).add(safeApplication);
+    return ref.id;
+  };
+  window.firebaseLoadTierTests=loadTests;
+  async function saveCloudAnnouncement(text){
+    try{await firebaseDb.collection(F.announcements).doc("main").set({text:text||"",updatedAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true});}catch(e){console.warn(e);}
+  }
+  async function loadCloudAnnouncement(){
+    try{const d=await firebaseDb.collection(F.announcements).doc("main").get();const text=d.exists?(d.data().text||""):"";const a=document.querySelector(".announcement");if(a)a.innerHTML=text?"📢 "+escapeHtml(text):"";const input=document.getElementById("announcementText");if(input)input.value=text;localStorage.setItem("mcpeAnnouncement",text);}catch(e){console.warn("Announcement load failed",e);}
+  }
+  async function saveCloudNews(){
+    try{
+      const news=JSON.parse(localStorage.getItem("mcpeNews")||"[]"), col=firebaseDb.collection(F.news), snap=await col.get(), wanted={};const batch=firebaseDb.batch();
+      news.forEach((x,i)=>{const id=String(x.id||("news_"+i+"_"+(x.createdAt||""))).replace(/[^a-zA-Z0-9_-]/g,"_").slice(0,120);x.id=id;wanted[id]=true;batch.set(col.doc(id),x,{merge:true});});snap.docs.forEach(d=>{if(!wanted[d.id])batch.delete(d.ref);});await batch.commit();
+    }catch(e){console.warn("News sync failed",e);}
+  }
+  async function loadCloudNews(){
+    try{const snap=await firebaseDb.collection(F.news).get();const news=snap.docs.map(d=>({id:d.id,...d.data()}));localStorage.setItem("mcpeNews",JSON.stringify(news));if(typeof renderNews==='function')renderNews();else if(typeof renderPublicNews==='function')renderPublicNews();}catch(e){console.warn("News load failed",e);}
+  }
+  window.firebaseSavePlayer=async function(p){
+    if(!p || !p[0]) throw new Error("Invalid player");
+    const id=safeDocId(p[0]);
+    await firebaseDb.collection(F.players).doc(id).set({name:String(p[0]||""),tier:String(p[1]||""),skin:String(p[2]||""),profile:(p[3]&&typeof p[3]==="object")?p[3]:{},customRank:String(p[4]||""),asiaRank:p[5]||"",updatedAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true});
+    return true;
+  };
+
+  window.firebaseSyncNow=async()=>{try{await writePlayers();await writeTests();await saveCloudNews();return true;}catch(e){console.error("Firebase sync failed:",e);alert("Firebase sync failed: "+(e.code||"unknown")+"\n"+(e.message||""));return false;}};
+  window.save=async function(){
+    localStorage.setItem("mcpeTierPlayers",JSON.stringify(players));
+    try{ await writePlayers(); }catch(e){ console.error("Firebase player save failed:",e); }
+  };
+  window.saveTierTests=async function(){
+    localStorage.setItem("mcpeTierTests",JSON.stringify(tierTests));
+    if(!adminLoggedIn || !firebaseAdminReady) return false;
+    await writeTests();
+    return true;
+  };
+  window.firebaseSaveAnnouncement=saveCloudAnnouncement;
+  window.firebaseSaveNews=saveCloudNews;
+  setTimeout(()=>{loadPlayers();if(adminLoggedIn && firebaseAdminReady)loadTests();loadCloudAnnouncement();loadCloudNews();},500);
+})();
+
+/* ===== Animation engine ===== */
+(function(){
+  const progress=document.createElement('div');
+  progress.id='scrollProgress';
+  document.body.prepend(progress);
+  const topBtn=document.createElement('button');
+  topBtn.id='backToTop'; topBtn.type='button'; topBtn.setAttribute('aria-label','Back to top'); topBtn.innerHTML='↑';
+  document.body.appendChild(topBtn);
+
+  function updateScroll(){
+    const doc=document.documentElement;
+    const max=doc.scrollHeight-doc.clientHeight;
+    progress.style.width=(max>0?(doc.scrollTop/max)*100:0)+'%';
+    topBtn.classList.toggle('show',doc.scrollTop>450);
+  }
+  window.addEventListener('scroll',updateScroll,{passive:true});
+  updateScroll();
+  topBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+
+  function revealAll(){
+    document.querySelectorAll('main > section, .card, .panel, .tier-card, .admin-card, .form-card, .notice, .topbar, .table-wrap').forEach(el=>{
+      if(!el.classList.contains('reveal')) el.classList.add('reveal');
+    });
+    const items=document.querySelectorAll('.reveal:not(.visible)');
+    if(!('IntersectionObserver' in window)){items.forEach(x=>x.classList.add('visible'));return;}
+    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -35px 0px'});
+    items.forEach(x=>io.observe(x));
+  }
+  revealAll();
+
+  document.addEventListener('click',e=>{
+    const btn=e.target.closest('button'); if(!btn || btn.id==='backToTop') return;
+    btn.classList.add('ripple');
+    const r=document.createElement('span'), rect=btn.getBoundingClientRect(), size=Math.max(rect.width,rect.height);
+    r.className='ripple-wave'; r.style.width=r.style.height=size+'px'; r.style.left=(e.clientX-rect.left-size/2)+'px'; r.style.top=(e.clientY-rect.top-size/2)+'px';
+    btn.appendChild(r); setTimeout(()=>r.remove(),600);
+  });
+
+  const oldShowTab=window.showTab;
+  if(typeof oldShowTab==='function'){
+    window.showTab=function(tab){oldShowTab(tab);setTimeout(revealAll,40);window.scrollTo({top:0,behavior:'smooth'});};
+  }
+})();
+
+</script>
+<script>
+(function(){
+  function cleanMaxlengthText(){
+    document.querySelectorAll('input,textarea').forEach(function(el){
+      if(typeof el.value==='string' && /maxlenth|maxlength\s*=?/i.test(el.value)){ el.value=''; }
+      if(el.placeholder && /maxlenth|maxlength\s*=?/i.test(el.placeholder)){ el.placeholder=''; }
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',cleanMaxlengthText);
+  else cleanMaxlengthText();
+})();
+</script>
+
+<style id="rialzylos-ranks-theme">
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+:root{--accent:#b78aff;--border:#44305e;--panel:#171023;--panel2:#211632;--text:#f7f2ff;--muted:#b5a6c9}
+body,button,input,select,textarea{font-family:'Outfit',system-ui,-apple-system,sans-serif!important;letter-spacing:.01em}
+h1,h2,h3,.section-kicker,.section-intro h2,.count-tag,.rank-num,.tier-rank-number{font-family:'Space Mono','Outfit',monospace!important;letter-spacing:-.035em}
+body{background:radial-gradient(ellipse at 50% -12%,#291541 0%,#100c19 48%,#0b0912 100%)!important;color:#f7f2ff!important}
+.pixel-header{background:linear-gradient(145deg,#1d1230,#100b19)!important;border-bottom:1px solid #4a3265!important}
+.pixel-cube{background:#a879ff!important;color:#1a0d29!important;box-shadow:0 0 22px #a879ff38!important}
+.main-nav button{border-radius:12px!important;border-color:#45305d!important;background:#1c1429!important;color:#e9dcff!important;box-shadow:none!important}
+.main-nav button.active{background:linear-gradient(135deg,#c7a4ff,#9562e8)!important;color:#1a0d29!important;border-color:#e0caff!important;box-shadow:0 5px 18px #a879ff30!important}
+.tier-rank-boards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.tier-rank-card{overflow:hidden;border:1px solid #3c2a52;border-radius:16px;background:linear-gradient(145deg,#1a1226,#120d1b);box-shadow:0 12px 28px #0002}
+.tier-rank-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 16px;background:linear-gradient(100deg,#2a1a3c,#1b1327);border-bottom:1px solid #3c2a52}
+.tier-rank-head h3{margin:0;font-size:15px;color:#d7baff}
+.tier-rank-tag{font-size:11px;font-weight:800;letter-spacing:.08em;color:#e4d2ff;background:#35234a;border:1px solid #60427d;border-radius:7px;padding:5px 8px}
+.tier-rank-row{display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:10px;padding:12px 15px;border-bottom:1px solid #2c203a;min-height:54px}
+.tier-rank-row:last-child{border-bottom:0}
+.tier-rank-number{font-size:16px;font-weight:700;color:#bd96ff}
+.tier-rank-name{display:block;min-width:0;overflow-wrap:anywhere;font-weight:700;color:#f8f3ff}
+.tier-rank-country{display:block;color:#a99ab9;font-size:12px;margin-top:2px}
+.tier-rank-label{font-size:11px;font-weight:800;color:#e2cbff;background:#2d1e40;border:1px solid #5d407a;border-radius:7px;padding:5px 7px;white-space:nowrap}
+.tier-rank-empty .tier-rank-name{color:#766b83;font-weight:500}
+.tier-rank-empty .tier-rank-label{color:#857794;background:#1a1322;border-color:#30223d}
+@media(max-width:650px){.tier-rank-boards{grid-template-columns:1fr}.tier-rank-row{grid-template-columns:30px minmax(0,1fr) auto;padding:11px 12px}.tier-rank-head h3{font-size:14px}}
+</style>
+<script id="rialzylos-rank-boards-script">
+(function(){
+ const RANK_GROUPS=['HT1','HT2','HT3','HT4','HT5','LT1','LT2','LT3','LT4','LT5'];
+ function safeText(v){return typeof escapeHtml==='function'?escapeHtml(String(v??'')):String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+ window.renderTierRankBoards=function(){
+   const root=document.getElementById('tierRankBoards'); if(!root)return;
+   const data=Array.isArray(window.players)?window.players:(typeof players!=='undefined'?players:[]);
+   root.innerHTML=RANK_GROUPS.map(group=>{
+     const matching=data.filter(p=>String(p?.[4]||'').trim().toUpperCase()===group).slice().sort((a,b)=>String(a?.[0]||'').localeCompare(String(b?.[0]||''))).slice(0,5);
+     const rows=Array.from({length:5},(_,i)=>{
+       const p=matching[i];
+       if(!p)return `<div class="tier-rank-row tier-rank-empty"><span class="tier-rank-number">${i+1}.</span><div><span class="tier-rank-name">Player not set</span><span class="tier-rank-country">Country not set</span></div><span class="tier-rank-label">${group}</span></div>`;
+       const country=(p[3]&&p[3].country)||'Country not set';
+       return `<div class="tier-rank-row"><span class="tier-rank-number">${i+1}.</span><div><span class="tier-rank-name">${safeText(p[0]||'Player')}</span><span class="tier-rank-country">${safeText(country)}</span></div><span class="tier-rank-label">${safeText(group)}</span></div>`;
+     }).join('');
+     return `<article class="tier-rank-card"><div class="tier-rank-head"><h3>Ranking Best ${group} Players</h3><span class="tier-rank-tag">TOP 5</span></div>${rows}</article>`;
+   }).join('');
+ };
+ const oldShowTab=window.showTab;
+ document.addEventListener('click',function(e){const b=e.target.closest('button[data-tab="ranks"]');if(b)setTimeout(()=>window.renderTierRankBoards(),0)});
+ const originalRender=window.renderPlayers;
+ if(typeof originalRender==='function'){
+   window.renderPlayers=function(){const out=originalRender.apply(this,arguments);window.renderTierRankBoards();return out;};
+ }
+ document.addEventListener('DOMContentLoaded',window.renderTierRankBoards);
+ setTimeout(window.renderTierRankBoards,500);
+})();
+</script>
+
+<script>
+/* Reliability patch: restore the existing Admin and Test Your Tier actions without changing the page design. */
+(function(){
+  // Recovery fallback: the main script can stop early if another optional feature throws.
+  // Keep the existing Firebase-backed submission available from this final script.
+  if(typeof window.firebaseSubmitTierTest!=='function'){
+    window.firebaseSubmitTierTest=async function(application){
+      if(typeof firebaseDb==='undefined' || !firebaseDb) throw new Error('Firebase did not initialize. Check your connection and reload the website.');
+      if(!application || !String(application.name||'').trim()) throw new Error('Minecraft name is required.');
+      var safe={name:String(application.name).trim().slice(0,40),country:String(application.country||'').trim().slice(0,60),email:String(application.email||'').trim().slice(0,254),mode:String(application.mode||'').slice(0,50),specialty:String(application.specialty||'').slice(0,100),experience:String(application.experience||'').slice(0,100),discord:String(application.discord||'').trim().slice(0,100),instagram:String(application.instagram||'').trim().slice(0,100),telegram:String(application.telegram||'').trim().slice(0,100),skin:String(application.skin||'').slice(0,500000),status:'Pending',submittedAt:String(application.submittedAt||new Date().toISOString()),notifications:Array.isArray(application.notifications)?application.notifications.slice(0,5):[]};
+      var ref=await firebaseDb.collection('tierTests').add(safe);
+      return ref.id;
+    };
+  }
+  function showAdminLogin(){
+    var modal=document.getElementById('adminLoginModal');
+    if(modal){modal.classList.add('show');return;}
+    alert('Admin login panel could not be found. Please refresh the page.');
+  }
+  // Keep the main script's Admin button and Firebase login handlers.
+  // Overriding them here caused a temporal-dead-zone error for adminLoggedIn.
+
+
+  var submitButton=document.getElementById('testSubmit');
+  if(submitButton){submitButton.onclick=async function(e){
+    if(e)e.preventDefault();
+    var msg=document.getElementById('testMessage');
+    var name=(document.getElementById('testName')?.value||'').trim();
+    var country=(document.getElementById('testCountry')?.value||'').trim();
+    var email=(document.getElementById('testEmail')?.value||'').trim();
+    if(!name||!country||!email){msg.textContent='Please fill in Minecraft Name, Country, and Email.';return;}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){msg.textContent='Please enter a valid email address.';return;}
+    if(typeof window.firebaseSubmitTierTest!=='function'){msg.textContent='Submission service did not load. Refresh the page and try again.';return;}
+    submitButton.disabled=true;msg.textContent='Submitting your tier test…';
+    try{
+      var file=document.getElementById('testSkin')?.files?.[0];
+      var skin='';
+      if(file){
+        if(file.size>350000){throw new Error('Skin image is too large. Please use an image under 350 KB.');}
+        skin=await new Promise(function(resolve,reject){var reader=new FileReader();reader.onload=function(){resolve(String(reader.result||''));};reader.onerror=function(){reject(new Error('Could not read the skin image.'));};reader.readAsDataURL(file);});
+      }
+      var submittedAt=new Date().toISOString();
+      var app={name:name,country:country,email:email,mode:document.getElementById('testMode')?.value||'UHC',specialty:document.getElementById('testSpecialty')?.value||'',experience:document.getElementById('testExperience')?.value||'',discord:(document.getElementById('testDiscord')?.value||'').trim(),instagram:'',telegram:'',skin:skin,status:'Pending',submittedAt:submittedAt,notifications:[{title:'Tier Test Submitted',message:'Your tier testing application has been received and is pending review.',status:'Pending',createdAt:submittedAt,unread:true,profileUrl:''}]};
+      var id=await window.firebaseSubmitTierTest(app);app.id=id;
+      try{var cached=JSON.parse(localStorage.getItem('mcpeTierTests')||'[]');if(!Array.isArray(cached))cached=[];cached.push(app);localStorage.setItem('mcpeTierTests',JSON.stringify(cached));}catch(ignore){}
+      msg.textContent='Tier test submitted successfully! Your application is pending admin review.';
+      ['testName','testCountry','testEmail','testDiscord'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
+      var skinInput=document.getElementById('testSkin');if(skinInput)skinInput.value='';
+    }catch(err){console.error('Tier test submission failed:',err);msg.textContent='Submission failed: '+(err.code?err.code+' — ':'')+(err.message||'Check your connection and try again.');}
+    finally{submitButton.disabled=false;}
+  };}
+})();
+</script>
+
+
+<script id="admin-button-final-fix">
+/* Final Admin-button safety fix: keep the existing Firebase authentication and UI. */
+(function () {
+  function byId(id) { return document.getElementById(id); }
+  function openAdmin() {
+    var modal = byId('adminLoginModal');
+    var loggedIn = false;
+    try { loggedIn = !!(window.adminLoggedIn || (window.sessionStorage && sessionStorage.getItem('mcpeAdminLoggedIn') === '1')); } catch (e) {}
+    if (loggedIn && typeof window.showTab === 'function') {
+      window.showTab('admin');
+      if (typeof window.renderAdmin === 'function') window.renderAdmin();
+      return;
+    }
+    if (!modal) { alert('Admin login panel is missing from this page.'); return; }
+    modal.classList.add('show');
+    modal.style.display = 'flex';
+    var email = byId('adminEmail');
+    if (email) setTimeout(function(){ try { email.focus(); } catch(e){} }, 30);
+  }
+  // Capture the click before any older handler can prevent the modal from opening.
+  document.addEventListener('click', function (event) {
+    var target = event.target;
+    var button = target && target.closest ? target.closest('#adminNav') : null;
+    if (!button) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+    openAdmin();
+  }, true);
+  document.addEventListener('DOMContentLoaded', function () {
+    var close = byId('adminLoginClose');
+    var modal = byId('adminLoginModal');
+    if (close && modal) close.addEventListener('click', function(){ modal.classList.remove('show'); modal.style.display=''; });
+    if (modal) modal.addEventListener('click', function(e){ if(e.target === modal){ modal.classList.remove('show'); modal.style.display=''; } });
+  });
+})();
+</script>
+
+<script id="admin-login-click-repair-v3">
+(function(){
+  function byId(id){return document.getElementById(id);}
+  function setMessage(text){var m=byId('adminLoginMsg');if(m)m.textContent=text||'';}
+  function getFirebaseAuth(){
+    try { if (typeof firebaseAuth !== 'undefined' && firebaseAuth) return firebaseAuth; } catch(e) {}
+    try { if (window.firebase && typeof window.firebase.auth === 'function') return window.firebase.auth(); } catch(e) {}
+    return null;
+  }
+  function getFirestore(){
+    try { if (typeof firebaseDb !== 'undefined' && firebaseDb) return firebaseDb; } catch(e) {}
+    try { if (window.firebase && typeof window.firebase.firestore === 'function') return window.firebase.firestore(); } catch(e) {}
+    return null;
+  }
+  function openAdminPanel(){var modal=byId('adminLoginModal');if(modal){modal.classList.add('show');modal.style.display='flex';}}
+  function bind(){
+    var btn=byId('adminLoginBtn');
+    if(btn){
+      btn.type='button';
+      btn.onclick=async function(ev){
+        if(ev){ev.preventDefault();ev.stopPropagation();}
+        var email=(byId('adminEmail')&&byId('adminEmail').value||'').trim();
+        var pw=(byId('adminPassword')&&byId('adminPassword').value)||'';
+        if(!email||!pw){setMessage('Enter your admin email and password.');return;}
+        var auth=getFirebaseAuth(), db=getFirestore();
+        if(!auth||!db){setMessage('Firebase did not initialize. Refresh the page and try again.');console.error('Admin login: Firebase Auth or Firestore is unavailable.');return;}
+        btn.disabled=true;btn.textContent='Logging in…';setMessage('Connecting to Firebase…');
+        try{
+          var credential=await auth.signInWithEmailAndPassword(email,pw);
+          var user=credential&&credential.user?credential.user:auth.currentUser;
+          if(!user)throw new Error('Firebase signed in but did not return a user.');
+          var snap=await db.collection('admins').doc(user.uid).get();
+          if(!snap.exists || (snap.data()&&snap.data().enabled===false)){
+            await auth.signOut();
+            setMessage('This account is not authorized as an admin.');
+            return;
+          }
+          try{adminLoggedIn=true;}catch(e){}
+          try{firebaseUser=user;firebaseAdminReady=true;}catch(e){}
+          try{sessionStorage.setItem('mcpeAdminLoggedIn','1');}catch(e){}
+          var modal=byId('adminLoginModal');if(modal){modal.classList.remove('show');modal.style.display='';}
+          if(byId('adminPassword'))byId('adminPassword').value='';
+          setMessage('');
+          if(typeof showTab==='function')showTab('admin');
+          if(typeof renderAdmin==='function')renderAdmin();
+          if(typeof window.firebaseLoadTierTests==='function')await window.firebaseLoadTierTests();
+        }catch(err){
+          console.error('Admin login failed:',err);
+          var code=err&&err.code?String(err.code)+': ':'';
+          setMessage(code+(err&&err.message?err.message:'Login failed. Check your connection and credentials.'));
+        }finally{btn.disabled=false;btn.textContent='Login';}
+      };
+    }
+    var close=byId('adminLoginClose'),modal=byId('adminLoginModal');
+    if(close&&modal){close.onclick=function(e){if(e)e.preventDefault();modal.classList.remove('show');modal.style.display='';};}
+    var nav=byId('adminNav');if(nav)nav.onclick=function(e){if(e)e.preventDefault();openAdminPanel();};
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bind);else bind();
+})();
+</script>
+
+
+<script id="admin-panel-render-repair">
+(function(){
+  function byId(id){ return document.getElementById(id); }
+  function safeText(err){ return String(err && (err.message || err) || 'Unknown rendering error').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+  function showAdminError(err){
+    var root=byId('adminContent'); if(!root) return;
+    console.error('Admin tools render error:',err);
+    root.innerHTML='<div class="box" style="border:1px solid #d66"><h3>Admin tools failed to load</h3><p>The login succeeded, but the admin tools could not render.</p><p style="overflow-wrap:anywhere"><b>Error:</b> '+safeText(err)+'</p><button type="button" class="action primary" id="adminPanelRetry">Retry loading tools</button></div>';
+    var retry=byId('adminPanelRetry'); if(retry) retry.onclick=function(){refresh(true);};
+  }
+  async function refresh(force){
+    var tab=byId('admin'), root=byId('adminContent');
+    if(!tab||!root) return;
+    if(!force && tab.style.display==='none') return;
+    try {
+      // The Firebase auth callback is authoritative; don't trust the cached session flag alone.
+      var auth=(typeof firebaseAuth!=='undefined' && firebaseAuth) ? firebaseAuth : (window.firebase&&firebase.auth?firebase.auth():null);
+      var db=(typeof firebaseDb!=='undefined' && firebaseDb) ? firebaseDb : (window.firebase&&firebase.firestore?firebase.firestore():null);
+      var user=auth&&auth.currentUser;
+      if(user && db){
+        var snap=await db.collection('admins').doc(user.uid).get();
+        if(!snap.exists || (snap.data() && snap.data().enabled===false)){
+          root.innerHTML='<div class="box"><h3>Admin access not authorized</h3><p>This signed-in Firebase account is not enabled in the admins collection.</p></div>';
+          return;
+        }
+        try { adminLoggedIn=true; } catch(e) {}
+        try { firebaseUser=user; firebaseAdminReady=true; } catch(e) {}
+        try { sessionStorage.setItem('mcpeAdminLoggedIn','1'); } catch(e) {}
+      }
+      if(typeof renderAdmin!=='function') throw new Error('renderAdmin() function is missing. The wrong or incomplete index.html may be deployed.');
+      renderAdmin();
+      if(!root.innerHTML.trim()) throw new Error('renderAdmin() returned without filling #adminContent.');
+    } catch(err){ showAdminError(err); }
+  }
+  function bind(){
+    var nav=byId('adminNav');
+    if(nav){ nav.addEventListener('click',function(){ setTimeout(function(){refresh(true);},80); }); }
+    var login=byId('adminLoginBtn');
+    if(login){ login.addEventListener('click',function(){ setTimeout(function(){refresh(true);},800); }); }
+    var tab=byId('admin');
+    if(tab && window.MutationObserver){
+      new MutationObserver(function(){ if(tab.style.display!=='none') refresh(false); }).observe(tab,{attributes:true,attributeFilter:['style','class']});
+    }
+    // Firebase may finish restoring the session after the page becomes visible.
+    setTimeout(function(){refresh(false);},500);
+    setTimeout(function(){refresh(false);},1600);
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',bind); else bind();
+})();
+</script>
+
+
+<!-- Removed the capture-phase approval interceptor that was blocking the inline approveTest handler. -->
+
+</body>
+</html>
+<style>
+/* Reference-inspired Minecraft PvP leaderboard: dark navy, skin portraits, bold positions and region pills */
+:root{--bg:#101720;--panel:#151c28;--panel2:#202a39;--text:#e4eaf4;--muted:#929eb1;--border:#202a38}
+body{background:#101720;color:#e4eaf4}
+header{background:#101720;border-bottom:1px solid #1b2533}
+main{max-width:760px;margin:20px auto;padding:0 14px}
+.section-intro{margin:18px 0 12px}.section-intro h2{font-size:23px}
+.top-three{gap:9px;margin:14px 0 20px}
+.podium-card,.podium-card.first{transform:none;background:#151c28;border:1px solid #202a38;box-shadow:none;border-radius:18px;text-align:left;padding:14px 10px}
+.podium-place{letter-spacing:1px;font-size:9px}.podium-number,.podium-card.first .podium-number{font-size:25px;color:#f1c448}
+.podium-avatar{width:42px;height:42px;margin:8px 0 10px;border-radius:50%;background:#202a39;border:2px solid #2a3546;color:#e8c14d;font-weight:900}
+.podium-name{font-size:13px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.podium-meta{font-size:11px}
+.podium-tier{border:0;border-radius:7px;background:#252e3c;color:#f0c84e}
+.ranking-panel{background:transparent;border:0;overflow:visible}.ranking-panel-head{padding:10px 2px 14px;border-bottom:0;display:block}
+.ranking-panel-head h3{font-size:21px;margin:5px 0 12px}.rank-search-wrap input{width:100%;min-width:0}
+.ranking-columns{grid-template-columns:30px minmax(0,1fr) 52px;padding:8px 12px;color:#7f8a9d;border:0}
+.ranking-columns span:nth-child(4){display:none}.ranking-list{display:grid;gap:12px}
+.ranking-row{display:grid;grid-template-columns:32px minmax(0,1fr) 52px;gap:10px;align-items:start;padding:20px 13px;min-height:150px;border:1px solid #202a38;border-radius:28px;background:#151c28!important;box-shadow:none}
+.ranking-row:hover{background:#151c28!important}.rank-num{font-size:31px;font-weight:900;color:#f0c34a;align-self:start;padding-top:4px}
+.rank-player{display:flex;align-items:center;gap:10px;min-width:0}.rank-head{display:block!important;flex:0 0 56px;width:56px;height:56px;border-radius:50%;background-color:#222d3d;border:2px solid #344155;image-rendering:pixelated;object-fit:cover}
+.rank-skin{background-color:#222d3d}.rank-initials{display:grid!important;place-items:center;color:#eac24d;font-weight:900}
+.rank-player-name{font-size:19px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;display:block;color:#f1f4fa}
+.rank-player-sub{font-size:14px;color:#a4afc0;margin-top:5px;display:block}
+.rank-country{align-self:start;justify-self:end;background:#48252e;color:#f47b8d;font-size:14px;font-weight:900;padding:10px 8px;border-radius:12px;min-width:48px;text-align:center;max-width:68px;overflow-wrap:anywhere}
+.rank-tier{grid-column:2/4;justify-self:start;margin-top:7px;background:#222c3b;color:#f1c84b;border:0;border-radius:12px;padding:10px 15px;font-size:15px;font-weight:900}
+.rank-tier.unset{color:#a0aabc}.board-footnote{color:#8995a8;font-size:12px;line-height:1.5}
+@media(max-width:440px){.top-three{gap:6px}.podium-card,.podium-card.first{padding:11px 7px}.podium-number,.podium-card.first .podium-number{font-size:21px}.podium-name{font-size:11px}.podium-meta{font-size:10px}.ranking-row{grid-template-columns:28px minmax(0,1fr) 48px;padding:17px 10px;min-height:145px;gap:8px}.rank-num{font-size:26px}.rank-head{width:48px;height:48px;flex-basis:48px}.rank-player-name{font-size:16px}.rank-player-sub{font-size:12px}.rank-country{font-size:12px;min-width:44px;padding:9px 6px}}
+</style>
+
+
+
